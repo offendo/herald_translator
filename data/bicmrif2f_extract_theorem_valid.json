@@ -1,0 +1,1002 @@
+[
+    {
+        "informal_statement": "定理 8.7 (势与可数性).\n\n对于任意两个集合 \\( A \\) 和 \\( B \\) ,如果 \\( A \\sim B \\) ,那么 \\( A \\) 和 \\( B \\) 要么是元素个数相同的有限集, 要么都是可数集, 要么都是不可数集.",
+        "id": "thm_combined_0",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "命题 1 (3.28) 给出了流形 \\( {M}_{1} \\) 的黎曼度量.",
+        "id": "thm_combined_1",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例 6 设 \\( {\\mathbf{X}}^{\\prime }A\\mathbf{X} \\) 是一个 \\( n \\) 元实二次型,证明: 如果 \\( {\\mathbf{R}}^{n} \\) 中有列向量 \\( {\\mathbf{\\alpha }}_{1},{\\mathbf{\\alpha }}_{2} \\) ,使得 \\( {\\mathbf{\\alpha }}_{1}^{\\prime }A{\\mathbf{\\alpha }}_{1} > 0 \\) , \\( {\\mathbf{\\alpha }}_{2}^{\\prime }A{\\mathbf{\\alpha }}_{2} < 0 \\) ,那么在 \\( {\\mathbf{R}}^{n} \\) 中有非零列向量 \\( {\\mathbf{\\alpha }}_{3} \\) ,使得 \\( {\\mathbf{\\alpha }}_{3}^{\\prime }A{\\mathbf{\\alpha }}_{3} = 0 \\) 。",
+        "id": "thm_combined_2",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Corollary 3.141.\\n\\n(1) For any simplex \\( A \\in \\sum \\), we have \\( \\dim A = \\dim \\left( {\\operatorname{supp}A}\\right) \\).\\n\\n(2) Let \\( A \\) and \\( B \\) be simplices in \\( \\sum \\) with \\( \\dim A = \\dim B \\). If \\( B \\in \\operatorname{supp}A \\), then \\( \\operatorname{supp}A = \\operatorname{supp}B \\).",
+        "id": "thm_combined_3",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Calculate the Fourier transform of the function \\( f(t) = 1/(z + t)^s \\) where \\( z \\) is a non real complex parameter and \\( s \\) an integer \\( \\geq 2 \\), with \\( \\operatorname{Im}(z) > 0 \\).",
+        "id": "thm_combined_4",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 7.5.4 设 \\( r \\in {\\mathbb{Z}}_{ + }, s > r + n/2 \\) ,\n\n\\[\n{C}_{0}^{r}\\left( {\\mathbb{R}}^{n}\\right) = \\left\\{ {f \\in {C}^{r}\\left( {\\mathbb{R}}^{n}\\right) : {\\partial }^{\\alpha }f \\in {C}_{0}\\left( {\\mathbb{R}}^{n}\\right) ,\\left| \\alpha \\right| \\leq r}\\right\\} ,\n\\]\n\n在 \\( {C}_{0}^{r}\\left( {\\mathbb{R}}^{n}\\right) \\) 中使用范数 (见式 (2.2.16))\n\n\\[\n\\parallel f{\\parallel }_{\\left( r\\right) } = \\mathop{\\max }\\limits_{{\\left| \\alpha \\right| \\leq r}}{\\begin{Vmatrix}{\\partial }^{\\alpha }f\\end{Vmatrix}}_{0},\n\\]\n\n则有连续的包含 \\( {H}^{s} \\subset {C}_{0}^{r}\\left( {\\mathbb{R}}^{n}\\right) \\) . 因此, \\( {H}^{\\infty } \\subset {C}^{\\infty } \\) .",
+        "id": "thm_combined_5",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 6.5 If \\( u \\) is a strong solution of the Navier-Stokes equations on \\( \\left\\lbrack {0, T}\\right\\rbrack \\) then \\( u \\) satisfies the energy equality\\n\\n\\[ \\frac{1}{2}{\\begin{Vmatrix}u\\left( {t}_{1}\\right) \\end{Vmatrix}}^{2} + {\\int }_{{t}_{0}}^{{t}_{1}}\\parallel \\nabla u\\left( s\\right) {\\parallel }^{2}\\mathrm{\\;d}s = \\frac{1}{2}{\\begin{Vmatrix}u\\left( {t}_{0}\\right) \\end{Vmatrix}}^{2} \\]\\n\\nfor all \\( {t}_{0},{t}_{1} \\in \\left\\lbrack {0, T}\\right\\rbrack ,{t}_{0} < {t}_{1} \\).",
+        "id": "thm_combined_6",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 10.4. Let \\( x \\in {R}^{d} \\) be fixed. Then \\( {X}^{e}\\left( {1, x, w}\\right) \\in {D}_{\\infty }\\left( {R}^{d}\\right) \\) has the asymptotic expansion\\n\\n\\[ \\n{X}^{\\varepsilon }\\left( {1, x, w}\\right) \\sim {f}_{0} + \\varepsilon {f}_{1} + {\\varepsilon }^{2}{f}_{2} + \\cdots \\;\\text{ in }{D}_{\\infty }\\left( {\\mathbf{R}}^{d}\\right) \\text{ as }\\varepsilon \\downarrow 0 \\n\\]\\n\\nand \\( {f}_{n} \\in {D}_{\\infty }\\left( {R}^{d}\\right), n = 0,1,\\cdots \\), are given by\\n\\n\\[ \\n{f}_{0} = x \\n\\]\\n\\nand\\n\\n\\[ \\n{f}_{n} = \\mathop{\\sum }\\limits_{{\\alpha : \\parallel \\alpha \\parallel = n}}{\\widetilde{V}}_{{\\alpha }_{m}} \\cdot {\\widetilde{V}}_{{\\alpha }_{m - 1}}\\cdots {\\widetilde{V}}_{{\\alpha }_{2}}\\left( {V}_{{\\alpha }_{1}}\\right) \\left( x\\right) {S}^{\\alpha }\\left( {1, w}\\right) , \\n\\]\\n\\n\\[ \\nn = 1,2,\\cdots \\text{.} \\n\\]",
+        "id": "thm_combined_7",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 15 解析函数族 \\( \\mathcal{F} \\) 关于 \\( \\mathbf{C} \\) 是正规的,当且仅当 \\( \\mathcal{F} \\) 中的函数在每一个紧致集上是一致有界的.",
+        "id": "thm_combined_8",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例 2 解答下列问题:\n（2）设 \\( \\mathbf{\\Gamma } \\) 是一族半开闭区间 \\( I\\left( {I = (a, b\\rbrack \\text{或}\\lbrack a, b}\\right) ) \\) 之全体,试证明 \\( \\mathop{\\bigcup }\\limits_{{I \\in \\Gamma }}I \\) 是可测集.",
+        "id": "thm_combined_9",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Problem 2.7. Let \\( {ABC} \\) be a triangle. Let \\( {A}_{1},{B}_{1} \\) and \\( {C}_{1} \\) be the points of tangency of the segments \\( {BC},{CA} \\) and \\( {AB} \\) and the excircles of \\( \\bigtriangleup {ABC} \\) . Prove that the lines \\( A{A}_{1}, B{B}_{1} \\) and \\( C{C}_{1} \\) are concurrent.",
+        "id": "thm_combined_10",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例 7 试证明下列命题:\n\n（1）设 \\( {f}_{n} \\in L\\left( \\left\\lbrack {a, b}\\right\\rbrack \\right) \\left( {n \\in \\mathbf{N}}\\right) \\) ,且有\n\n\\[\n\\left| {{f}_{n}\\left( x\\right) }\\right| \\leq {M}_{n}\\left( {n \\in \\mathbf{N}, x \\in \\left\\lbrack {a, b}\\right\\rbrack }\\right) ,\\;\\mathop{\\sum }\\limits_{{n = 1}}^{\\infty }{M}_{n} < + \\infty ,\n\\]\n\n则 \\( \\mathop{\\sum }\\limits_{{n = 1}}^{\\infty }\\left| {{f}_{n}\\left( x\\right) }\\right| < + \\infty \\), a. e. \\( x \\in \\left\\lbrack {a, b}\\right\\rbrack \\) ,且有\n\n\\[\n{\\int }_{a}^{b}\\mathop{\\sum }\\limits_{{n = 1}}^{\\infty }{f}_{n}\\left( x\\right) \\mathrm{d}x = \\mathop{\\sum }\\limits_{{n = 1}}^{\\infty }{\\int }_{a}^{b}{f}_{n}\\left( x\\right) \\mathrm{d}x.\n\\]",
+        "id": "thm_combined_11",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Proposition 18.1 There exists \\( {c}_{N} \\in \\mathbb{N} \\) depending only on \\( N \\) and independent of \\( E \\) , such that, for every \\( k \\in \\mathbb{N} \\), at most \\( {c}_{N} \\) balls out of \\( \\left\\{ {{B}_{1},\\ldots ,{B}_{k}}\\right\\} \\) intersect \\( {B}_{k} \\) .",
+        "id": "thm_combined_12",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 1. For all \\( n \\) ,\\n\\n\\[ \\n{\\widetilde{H}}_{m}\\left( {S}^{n}\\right) = \\left\\{ \\begin{array}{l} \\mathbb{Z},\\text{ if }m = n, \\\\ 0,\\text{ if }m \\neq n. \\end{array}\\right.\\n\\]",
+        "id": "thm_combined_13",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 2.6.10. Every collection of inner functions has a greatest common divisor. Every finite collection of inner functions has a least common multiple.",
+        "id": "thm_combined_14",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例题 12.1.1 设 \\( f \\) 在 \\( \\left( {0,1}\\right) \\) 上单调,无界广义积分 \\( {\\int }_{0}^{1}f\\left( x\\right) \\mathrm{d}x \\) 收敛,则有\n\n\\[\n\\mathop{\\lim }\\limits_{{n \\rightarrow \\infty }}\\frac{f\\left( \\frac{1}{n}\\right) + f\\left( \\frac{2}{n}\\right) + \\cdots + f\\left( \\frac{n - 1}{n}\\right) }{n} = {\\int }_{0}^{1}f\\left( x\\right) \\mathrm{d}x.\n\\]",
+        "id": "thm_combined_15",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Add 1875 and 358.",
+        "id": "thm_combined_16",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Let \\( V = V\\left( f\\right) \\) be the hypersurface \\( {}^{13} \\) in \\( {\\mathbb{A}}^{n} \\) defined by a nonconstant polynomial \\( f \\) in \\( \\mathbb{k}\\left\\lbrack {{X}_{1},\\ldots ,{X}_{n}}\\right\\rbrack \\) . Then the open set \\( {\\mathbb{A}}^{n} - V \\) is isomorphic to an affine variety, specifically to the hypersurface in \\( {\\mathbb{A}}^{n + 1} \\) corresponding to the irreducible polynomial \\( {X}_{n + 1}f\\left( {{X}_{1},\\ldots ,{X}_{n}}\\right) - 1 \\) in \\( \\mathbb{k}\\left\\lbrack {{X}_{1},\\ldots ,{X}_{n + 1}}\\right\\rbrack \\) .",
+        "id": "thm_combined_17",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理1.3 设 \\( f \\) 以 \\( {2\\pi } \\) 为周期, \\( u = P\\left( f\\right) \\) ,则\n\n(1) 当 \\( f \\in {L}^{p}\\left( \\mathbf{T}\\right) \\) 时, \\( 1 \\leq p < \\infty \\) ,有\n\n\\[\n{\\int }_{-\\pi }^{\\pi }{\\left| u\\left( r{\\mathrm{e}}^{\\mathrm{i}t}\\right) - f\\left( t\\right) \\right| }^{p}\\mathrm{\\;d}t \\rightarrow 0\\;\\left( {r \\rightarrow 1}\\right) ;\n\\]\n\n（2）当 \\( f \\in C\\left\\lbrack {-\\pi ,\\pi }\\right\\rbrack \\) 时,有\n\n\\[\nu\\left( {r{\\mathrm{e}}^{\\mathrm{i}t}}\\right) \\rightarrow f\\left( t\\right) \\;\\left( {r \\rightarrow 1}\\right)\n\\]\n\n即 \\( u \\) 在 \\( t \\in \\left\\lbrack {-\\pi ,\\pi }\\right\\rbrack \\) 上一致收敛.",
+        "id": "thm_combined_18",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Lemma 6.3.26. Let \\( f \\) be an integer such that \\( f \\nmid {12} \\) .\\n\\n(1) If \\( D \\) is any integer, there exists \\( t \\) such that \\( \\left( {{t}^{2} - D,{2f}}\\right) = 1 \\) and \\( f \\nmid {2t} \\) .",
+        "id": "thm_combined_19",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "引理 18.5.2(连续函数是可测的) 设 \\( \\Omega \\) 是 \\( {\\mathbb{R}}^{n} \\) 的可测子集,并设 \\( f : \\Omega \\rightarrow {\\mathbb{R}}^{m} \\) 是连续的. 那么 \\( f \\) 也是可测的.",
+        "id": "thm_combined_20",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 4. The medial triangle DEF is perspective with triangle \\( {A}^{ * }{B}^{ * }{C}^{ * } \\), at the Mittenpunkt \\( {M}_{\\mathrm{t}}{}^{1} \\) of triangle \\( {ABC} \\) (see Figure 3).",
+        "id": "thm_combined_21",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Corollary 2.10.6. Let \\( f \\in {AP}\\left( G\\right) \\) and \\( \\epsilon > 0 \\) . Then there exist \\( {a}_{1},\\ldots ,{a}_{n} \\in G \\) such that the functions \\( {L}_{{a}_{i}}{R}_{{a}_{j}}f,1 \\leq i, j \\leq n \\), form an \\( \\epsilon \\) -net for the set of all two-sided translates \\( {L}_{a}{R}_{b}f, a, b \\in G \\) .",
+        "id": "thm_combined_22",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例 3.4 设 \\( X \\) 的分布为\n\n\\[\n{P}_{\\theta }\\left\\lbrack {X = k}\\right\\rbrack = \\left\\{ {\\begin{array}{ll} \\theta , & \\text{ 当 }k = - 1 \\\\ {\\left( 1 - \\theta \\right) }^{2}{\\theta }^{k}, & \\text{ 当 }k = 0,1,2,\\cdots \\end{array}\\left( {0 \\leq \\theta \\leq 1}\\right) .}\\right.\n\\]\n\n记 \\( {g}_{1}\\left( \\theta \\right) = \\theta ,{g}_{3}\\left( \\theta \\right) = {\\left( 1 - \\theta \\right) }^{2} \\) . 以下证明 \\( {g}_{1}\\left( \\theta \\right) \\) 不存在 UMVUE, 而 \\( {g}_{2}\\left( \\theta \\right) \\) 却存在.",
+        "id": "thm_combined_23",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例 8 将函数 \\( f\\left( x\\right) = \\operatorname{sgn}\\left( {\\cos x}\\right) \\) 在开区间 \\( \\left\\lbrack {0,\\pi }\\right\\rbrack \\) 内展成傅立叶级数.",
+        "id": "thm_combined_24",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Lemma 1.1. For any positive integers \\( N, n, k \\) we have\\n\\n\\[ f\\left( {n + {p}^{N}k}\\right) \\equiv f\\left( n\\right) \\;\\left( {\\;\\operatorname{mod}\\;{p}^{N}}\\right) . \\]",
+        "id": "thm_combined_25",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 3.1.5. Let \\( A \\in {M}_{n} \\) be strictly upper triangular. There is a nonsingular \\( S \\in \\) \\( {M}_{n} \\) and there are integers \\( {n}_{1},{n}_{2},\\ldots ,{n}_{m} \\) with \\( {n}_{1} \\geq {n}_{2} \\geq \\cdots \\geq {n}_{m} \\geq 1 \\) and \\( {n}_{1} + {n}_{2} + \\) \\( \\cdots + {n}_{m} = n \\) such that\\n\\n\\[ A = S\\left( {{J}_{{n}_{1}}\\left( 0\\right) \\oplus {J}_{{n}_{2}}\\left( 0\\right) \\oplus \\cdots \\oplus {J}_{{n}_{m}}\\left( 0\\right) }\\right) {S}^{-1} \\]\\n\\n(3.1.6)\\n\\nIf \\( A \\) is real, the similarity matrix \\( S \\) may be chosen to be real.",
+        "id": "thm_combined_26",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 4.13. The conjugacy classes (by elements of \\( A \\) or, equivalently, of \\( G \\) ) of splittings of \\( E \\) are in bijective correspondence with the elements of the cohomology group \\( {H}^{1}\\left( {G, A}\\right) \\) .",
+        "id": "thm_combined_27",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 4.54. If \\( \\Delta \\) is a building, then the union of any family of apartment systems is again an apartment system. Consequently, \\( \\Delta \\) admits a largest system of apartments.",
+        "id": "thm_combined_28",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例1 设跳伞员受到与速度大小成正比的空气阻力, 我们来考察他的下降速度 \\( v \\) 的变化规律. 根据牛顿第二定律,我们得到运动方程\n\n\\[\nm\\frac{\\mathrm{d}v}{\\mathrm{\\;d}t} = {mg} - {kv}\n\\]\n\n即\n\n\\[\n\\frac{\\mathrm{d}v}{\\mathrm{\\;d}t} + \\frac{k}{m}v = g\n\\]",
+        "id": "thm_combined_29",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理3.1 设 \\( \\parallel \\cdot \\parallel \\) 是 \\( {\\mathbb{C}}^{m} \\) 上的范数, \\( A \\in {\\mathbb{C}}_{n}^{m \\times n}\\left( {m \\geq n}\\right) \\) . 则由\n\n\\[\n{v}_{A}\\left( x\\right) = \\parallel {Ax}\\parallel, x \\in {\\mathbb{C}}^{n},\n\\]\n\n所定义的非负实函数 \\( {v}_{A} \\) 是 \\( {\\mathbb{C}}^{n} \\) 上的范数.",
+        "id": "thm_combined_30",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Example 8.15 (Solution of a System of Linear Equations Revisited) Using matrix notation, we can write a system of \\( n \\) linear equations in \\( n \\) unknowns,\\n\\n\\[ \\n\\\\begin{cases} {a}_{11}{x}_{1} + {a}_{12}{x}_{2} + \\\\cdots + {a}_{1n}{x}_{n} & = {b}_{1}, \\\\\\\\ {a}_{21}{x}_{1} + {a}_{22}{x}_{2} + \\\\cdots + {a}_{2n}{x}_{n} & = {b}_{2}, \\\\\\\\ {a}_{31}{x}_{1} + {a}_{32}{x}_{2} + \\\\cdots + {a}_{3n}{x}_{n} & = {b}_{3}, \\\\\\\\ & \\\\cdots \\\\\\\\ {a}_{n1}{x}_{1} + {a}_{n2}{x}_{2} + \\\\cdots + {a}_{nn}{x}_{n} & = {b}_{n}, \\\\end{cases} \\n\\]\\n\\nas a single linear equation \\( {Ax} = b \\) in the unknown \\( n \\\\times 1 \\) matrix \\( x \\), where \\( A = \\\\left( {a}_{ij}\\\\right) \\) and \\( b = \\\\left( {b}_{i}\\\\right) \\) are given \\( n \\\\times n \\) and \\( n \\\\times 1 \\) matrices. If \\( A \\) is invertible, this equation has a unique solution \\( x = {A}^{-1}b \\) .",
+        "id": "thm_combined_31",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例 4 解偏微分方程组\n\n\\[\n\\left\\{ \\begin{array}{l} \\frac{{\\partial }^{2}{u}_{1}}{\\partial {t}_{1}\\partial {t}_{2}} - 2\\frac{\\partial {u}_{1}}{\\partial {t}_{1}} + \\frac{\\partial {u}_{2}}{\\partial {t}_{2}} + {u}_{2} = {t}_{1} + {t}_{2} + 1, \\\\ 2\\frac{{\\partial }^{2}{u}_{2}}{\\partial {t}_{1}\\partial {t}_{2}} - \\frac{\\partial {u}_{2}}{\\partial {t}_{1}} + \\frac{\\partial {u}_{1}}{\\partial {t}_{1}} + {u}_{1} = \\left( {{t}_{1} + 1}\\right) {\\mathrm{e}}^{2{t}_{2}} - 1,\\; - \\infty < {t}_{1},{t}_{2} < + \\infty , \\\\ {\\left. {u}_{1}\\right| }_{{t}_{1} = 0} = 0,{\\left. {u}_{1}\\right| }_{{t}_{2} = 0} = {t}_{1},{\\left. {u}_{2}\\right| }_{{t}_{1} = 0} = {t}_{2},{\\left. {u}_{2}\\right| }_{{t}_{2} = 0} = {t}_{1}. \\end{array}\\right.\n\\]",
+        "id": "thm_combined_32",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 1.25 设 \\( S \\) 为一集合, \\( D \\) 为 \\( S \\) 的一距离,则 \\( S \\) 的 \\( D \\) 完备化集 \\( {S}_{D} \\) 是完备的.",
+        "id": "thm_combined_33",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 1.2(De. Morgan 法则)\n\n(i) \\( {\\left( \\mathop{\\bigcup }\\limits_{{\\alpha \\in I}}{A}_{\\alpha }\\right) }^{c} = \\mathop{\\bigcap }\\limits_{{\\alpha \\in I}}{A}_{\\alpha }^{c} \\) ;\n\n(ii) \\( {\\left( \\mathop{\\bigcap }\\limits_{{\\alpha \\in I}}{A}_{\\alpha }\\right) }^{c} = \\mathop{\\bigcup }\\limits_{{\\alpha \\in I}}{A}_{\\alpha }^{c} \\) .",
+        "id": "thm_combined_34",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 41. There exists a congruent transformation carrying any segment \\( \\left( {AB}\\right) \\) into any congruent segment \\( \\left( {{A}^{\\prime }{B}^{\\prime }}\\right) \\) and any half-plane bounded by \\( {AB} \\) into any half-plane bounded by \\( {A}^{\\prime }{B}^{\\prime } \\) .",
+        "id": "thm_combined_35",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Lemma 17.1 [122] The quotient map \\( {q}_{K} : \\mathop{\\coprod }\\limits_{n}{K}_{n} \\times {\\Delta }^{n} \\rightarrow \\left| K\\right| \\) restricts to a bijection\\n\\n\\[{\\widetilde{q}}_{K} : \\mathop{\\coprod }\\limits_{n}N{K}_{n} \\times {\\overset{ \\circ }{\\Delta }}^{n} \\rightarrow \\left| K\\right| .",
+        "id": "thm_combined_36",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例 5.3.23 (1) 设 \\( f\\left( x\\right) \\) 在 \\( \\left( {a, b}\\right) \\) 上可导, \\( b - a \\geq 4 \\) ,则存在 \\( {x}_{0} \\in \\left( {a, b}\\right) \\) ,使得\n\n\\[\n{f}^{\\prime }\\left( {x}_{0}\\right) < 1 + {f}^{2}\\left( {x}_{0}\\right) .\n\\]",
+        "id": "thm_combined_37",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Proposition 6.1 Let \\( H \\in {\\mathbf{{HPD}}}_{n} \\) and \\( K \\in {\\mathbf{H}}_{n} \\) be given. Then the product \\( {HK} \\) (or KH as well) is diagonalizable with real eigenvalues. The number of positive (respectively, negative) eigenvalues of \\( {HK} \\) equals that for \\( K \\) .",
+        "id": "thm_combined_38",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "引理 12.5 在引理 12.3 的假设条件下, 我们有\n\n\\[\n{\\begin{Vmatrix}{e}^{n + 1}\\end{Vmatrix}}_{0, p, h} \\leq {\\begin{Vmatrix}{e}^{n}\\end{Vmatrix}}_{0, p, h} + {C}_{16}{\\Delta t}{\\left( 1 + \\frac{1}{8}{\\begin{Vmatrix}{e}^{n}\\end{Vmatrix}}_{0,\\infty, h}\\right) }^{1/q}\n\\]\n\n\\[\n\\text{-}{\\left( 1 + \\frac{1}{\\delta }{\\begin{Vmatrix}{e}^{n}\\end{Vmatrix}}_{0,\\infty, b}\\right) }^{2/p}\n\\]\n\n\\[\n\\cdot \\left( {{\\varepsilon }^{k} + {\\delta }^{2} + {\\Delta t} + {\\begin{Vmatrix}{\\varepsilon }^{ * }\\end{Vmatrix}}_{0, p, k} + \\mathop{\\sum }\\limits_{{l = 1}}^{n}{\\begin{Vmatrix}{\\varepsilon }^{l}\\end{Vmatrix}}_{0, p, k}{\\Delta t}}\\right) ,\n\\]\n\n其中常数 \\( {c}_{16} \\) 与 \\( {c}_{13} \\) 无关.",
+        "id": "thm_combined_39",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Proposition 9. Referring to Figure 13, the centers of the sides of the main flanks are aligned as shown and the corresponding lines intersect at the outer diagonal of \\( q \\) i.e. the line joining the intersection points of opposite sides of \\( q \\) .",
+        "id": "thm_combined_40",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例题 6 试确定在分子束实验中, 从蒸气源小孔中射出的分子射线中分子的最概然速率、平均速率和方均根速率.",
+        "id": "thm_combined_41",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 2 设 \\( V \\) 是除环 \\( K \\) 上的左向量空间,如果 \\( X = \\) \\( {\\left\\{ {x}_{i}\\right\\} }_{i = 1}^{n}, Y = {\\left\\{ {y}_{i}\\right\\} }_{i = 1}^{n} \\) 是 \\( V \\) 的两个 \\( K \\) 一基,则有 \\( m = n \\) .",
+        "id": "thm_combined_42",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例 1 求下列代数式的值:\n\n(1) 在 \\( \\frac{1}{2}{bh} \\) 中,当 \\( b = {10}, h = 6 \\) 时;\n\n(2) 在 \\( {ax} - {\\left( x - 3\\right) }^{2} \\) 中,当 \\( a = 4, x = 5 \\) 时.",
+        "id": "thm_combined_43",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 8.10.6. Arzela-Ascoli Theorem. A subset A of \\( C \\) has compact closure if and only if \\( \\mathop{\\sup }\\limits_{{\\omega \\in A}}\\left| {\\omega \\left( 0\\right) }\\right| < \\infty \\) and \\( \\mathop{\\lim }\\limits_{{\\delta \\rightarrow 0}}\\mathop{\\sup }\\limits_{{\\omega \\in A}}{\\operatorname{osc}}_{\\delta }\\left( \\omega \\right) = 0 \\) .",
+        "id": "thm_combined_44",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 5(II. II. Keposum 11) 命 \\( {H}_{n}\\left( {f, x}\\right), n = 1,2,\\cdots \\) 是线性单调算子序列,它们把实空间 \\( C\\left\\lbrack {a, b}\\right\\rbrack \\) 映射到自身. 若对于 \\( \\nu = 0 \\) , \\( 1,2 \\) ,关系\n\n\\[\n\\begin{Vmatrix}{{H}_{n}\\left( {{l}^{\\prime }, x}\\right) - {x}^{v}}\\end{Vmatrix} = o\\left( 1\\right) \\text{,当 }n \\rightarrow \\infty \\text{ 时 }\n\\]\n\n成立,则对于每个函数 \\( f\\left( t\\right) \\in C\\left\\lbrack {a, b}\\right\\rbrack \\) ,关系\n\n\\[\n\\left| {{H}_{n}\\left( {f, x}\\right) - f\\left( x\\right) }\\right| - o\\left( 1\\right) ,\\;\\text{ 当 }n \\rightarrow \\infty \\text{ 时 }\n\\]\n\n成立.",
+        "id": "thm_combined_45",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Proposition 17.5.24. Let \\( \\\\left( {{g}_{1},\\\\ldots ,{g}_{n}}\\\\right) \\\\in \\\\mathop{\\\\prod }\\\\limits_{{i = 1}}^{n}{G}_{i} \\) . If \\( {g}_{i} \\) has finite order \\( {r}_{i} \\) in \\( {G}_{i} \\), then the order of \\( \\\\left( {{g}_{1},\\\\ldots ,{g}_{n}}\\\\right) \\) is the least common multiple of \\( {r}_{1},\\\\ldots ,{r}_{n} \\) .",
+        "id": "thm_combined_46",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例 3.2.2 若 \\( {P}_{n}\\left( x\\right) = {a}_{0}{x}^{n} + {a}_{1}{x}^{n - 1} + \\cdots + {a}_{n - 1}x + {a}_{n}\\left( {a}_{0}\\right. \\) \\( \\neq 0) \\) 为实系数多项式,且其一切根皆为实数,试证: 导数 \\( {P}_{n}^{\\prime }\\left( x\\right) \\) , \\( {P}^{\\prime \\prime }{}_{n}\\left( x\\right) ,\\cdots ,{P}_{n}^{\\left( n - 1\\right) }\\left( x\\right) \\) 也仅有实根.",
+        "id": "thm_combined_47",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例2 求和 \\( \\mathop{\\sum }\\limits_{{n = 1}}^{\\infty }\\frac{1}{\\left( {{8n} - 7}\\right) \\left( {{8n} - 4}\\right) \\left( {{8n} - 1}\\right) } \\) .",
+        "id": "thm_combined_48",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 5.5.8 设 \\( A \\in {\\Psi }_{\\rho \\delta }^{m}\\left( \\Omega \\right) \\) ,其中 \\( m \\) 是任意实数而 \\( 0 \\leq \\delta < \\rho \\leq 1 \\) . 再设 \\( \\Omega \\) 的边界充分光滑. 则对任意实数 \\( s, A \\) 是映 \\( {H}_{0}^{s}\\left( \\Omega \\right) \\) 到 \\( {H}^{s - m}\\left( \\Omega \\right) \\) 的有界线性算子.",
+        "id": "thm_combined_49",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 3.10 设 \\( \\mathcal{U} \\) 为 \\( X \\) 的一族子集使 \\( \\operatorname{Int}\\mathcal{U} \\) 是 \\( X \\) 的开覆盖. \\( {S}_{n}^{\\mathcal{U}}\\left( X\\right) \\) 是 \\( {S}_{n}\\left( X\\right) \\) 的子群,它由所有使得 \\( \\phi \\left( {\\Delta }_{n}\\right) \\subset U \\) 某个 \\( U \\in \\mathcal{U} \\) 的 \\( n \\) 维奇异单形 \\( \\phi : {\\bigtriangleup }_{n} \\rightarrow X \\) 所生成. 令 \\( i : {S}_{n}^{\\mathcal{U}}\\left( X\\right) \\rightarrow \\) \\( {S}_{n}\\left( X\\right) \\) 为内射链映射,则 \\( i \\) 导出同构\n\n\\[\n{i}_{ * } : {H}_{n}\\left( {{S}^{\\mathcal{U}}\\left( X\\right) }\\right) \\rightarrow {H}_{n}\\left( {S\\left( X\\right) }\\right) ,\\;\\text{ 每个 }n \\in Z.\n\\]",
+        "id": "thm_combined_50",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定义 27.1 由 \\( \\mathcal{L} \\) 生成的一阶语言的“项”归纳定义如下:\n（1）变元符号和常元符号都是项;\n(2) 若 \\( {f}^{m} \\) 是 \\( \\mathcal{L} \\) 中一个 \\( m \\) 元函数符号, \\( {t}_{1},{t}_{2},\\cdots ,{t}_{m} \\) 是 \\( \\mathcal{L} \\) 中项,则 \\( {f}^{m}\\left( {{t}_{1},{t}_{2},\\cdots ,{t}_{m}}\\right) \\) 是 \\( \\mathcal{L} \\) 中项;\n（3）所有项都是有限次应用 (1) 和 (2) 得到的.",
+        "id": "thm_combined_51",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 4.2. Let \\( B \\) be a region, \\( f \\) holomorphic in \\( \\bar{B},\\left| {f\\left( \\bar{B}\\right) }\\right| \\leq M,\\varepsilon > 0 \\), and \\( {\\mathfrak{z}}_{0} \\in {B}_{\\varepsilon } \\) a point. In a neighborhood \\( U = U\\left( {\\mathfrak{z}}_{0}\\right) \\subset B \\), let \\( f \\) have the power series expansion \\( f\\left( 3\\right) = \\mathop{\\sum }\\limits_{{v = 0}}^{\\infty }{a}_{v}{\\left( 3 - {3}_{0}\\right) }^{v} \\) . Then for all \\( v \\) ,\\n\\n\\[ \\left| {a}_{v}\\right| \\leq \\frac{M}{{\\varepsilon }^{\\left| v\\right| }} \\]",
+        "id": "thm_combined_52",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 9.5.5 Let \\( k \\) be a number field with one complex place and let \\( A \\) be a quaternion algebra over \\( k \\) which is ramified at all real places. Let \\( k \\) be such that \\( \\left\\lbrack {k : \\ell }\\right\\rbrack = 2 \\), where \\( \\ell = k \\cap \\mathbb{R} \\) . Let \\( B \\) be a quaternion algebra over \\( \\ell \\) which is ramified at all real places except the identity. Then \\( A \\cong \\) \\( B{ \\otimes }_{\\ell }k \\) if and only if \\( {\\operatorname{Ram}}_{f}\\left( A\\right) \\) consists of \\( {2r} \\) distinct ideals, \\( r \\) possibly zero, \\( \\left\\{ {{\\mathcal{P}}_{1},{\\mathcal{P}}_{1}^{\\prime },\\ldots ,{\\mathcal{P}}_{r},{\\mathcal{P}}_{r}^{\\prime }}\\right\\} \\), where \\( {\\mathcal{P}}_{i} \\cap {R}_{\\ell } = {\\mathcal{P}}_{i}^{\\prime } \\cap {R}_{\\ell } = {p}_{i} \\) and \\( {\\operatorname{Ram}}_{f}\\left( B\\right) \\supset \\) \\( \\left\\{ {{p}_{1},\\ldots ,{p}_{r}}\\right\\} \\) with \\( {\\operatorname{Ram}}_{f}\\left( B\\right) \\smallsetminus \\left\\{ {{p}_{1},\\ldots ,{p}_{r}}\\right\\} \\) consisting of primes in \\( {R}_{\\ell } \\) which are either ramified or inert in the extension \\( k \\mid \\ell \\) .",
+        "id": "thm_combined_53",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 12.17 (Cartan’s Fixed-Point Theorem). Suppose \\( \\left( {M, g}\\right) \\) is a Cartan-Hadamard manifold and \\( G \\) is a compact Lie group acting smoothly and isometrically on \\( M \\) . Then \\( G \\) has a fixed point in \\( M \\), that is, a point \\( {p}_{0} \\in M \\) such that \\( \\varphi \\cdot {p}_{0} = {p}_{0} \\) for all \\( \\varphi \\in G \\) .",
+        "id": "thm_combined_54",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "引理 3.1.29 设 \\( G \\) 是交换局部紧的拓扑群, \\( \\mathfrak{B} \\) 是紧集张成的 \\( \\sigma \\) -环, \\( \\mu \\) 是左不变 Haar 测度,那么 \\( G \\) 上的 \\( \\mu - \\) 拓扑弱于 \\( G \\) 原有的拓扑.",
+        "id": "thm_combined_55",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Lemma 2.10 Let \\( f \\) be a mapping defined on \\( D \\) and with values in the metric space \\( \\\\left( {E, d}\\\\right) \\). Assume that there exists a real \\( \\\\alpha > 0 \\) and a constant \\( K < \\\\infty \\) such that, for every integer \\( n \\\\geq 1 \\) and every \\( i \\\\in \\\\left\\\\{ {1,2,\\\\ldots ,{2}^{n} - 1}\\\\right\\\\} \\),",
+        "id": "thm_combined_56",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Proposition 15.6 Assume that there exists \\( \\alpha \\in \\mathbb{R} \\) such that\\ni) \\( {f}_{\\alpha },{\\widehat{f}}_{\\alpha } \\in {L}^{1}\\left( \\mathbb{R}\\right) \\) ;\\nii) \\( {E}^{Q}\\left\\lbrack {S}_{T}^{\\alpha }\\right\\rbrack \\) is finite.\\n\\nThen the following pricing formula holds:\\n\\n\\[ H\\left( {{S}_{0}, T}\\right) = \\frac{{e}^{-{rT}}{S}_{0}^{\\alpha }}{\\pi }{\\int }_{0}^{\\infty }{e}^{-{i\\xi }\\log {S}_{0}}{\\varphi }_{{X}_{T}}\\left( {-\\left( {\\xi + {i\\alpha }}\\right) }\\right) \\widehat{f}\\left( {\\xi + {i\\alpha }}\\right) {d\\xi }.\\ \\]",
+        "id": "thm_combined_57",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例 2. \\( {\\underline{\\underline{16}}}^{3} \\)",
+        "id": "thm_combined_58",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Proposition 3.6.3. Let \\( \\Gamma \\) be an extensive game with perfect recall. Then, each perfect equilibrium of \\( \\Gamma \\) induces a perfect equilibrium of \\( {G}_{A\\Gamma } \\) and vice versa.",
+        "id": "thm_combined_59",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例 2 设 \\( M\\left( {{\\rho }_{0},{\\theta }_{0}}\\right) \\) 是圆锥曲线 \\( \\rho = \\frac{p}{1 - \\operatorname{ecos}\\theta } \\) 上任意一点,在极轴所在直线上取点 \\( N \\) ,使 \\( \\left| {OM}\\right| = \\left| {NM}\\right| \\) . 求 \\( \\bigtriangleup {OMN} \\) 重心 \\( P \\) 的轨迹方程.",
+        "id": "thm_combined_60",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "命题 3.8.3 设 \\( {\\Lambda }_{1},{\\Lambda }_{2} \\subset \\mathbb{C} \\) 是格. 我们有双射\n\n\\[\n\\left\\{ \\begin{matrix} f : \\mathbb{C}/{\\Lambda }_{1} \\rightarrow \\mathbb{C}/{\\Lambda }_{2} \\\\ \\text{ 作为 Riemann 曲面 } \\\\ f\\left( 0\\right) = 0 \\end{matrix}\\right\\} = \\left\\{ \\begin{matrix} f : \\mathbb{C}/{\\Lambda }_{1} \\rightarrow \\mathbb{C}/{\\Lambda }_{2} \\\\ \\text{ 作为复环面 } \\end{matrix}\\right\\} \\begin{matrix} \\leftarrow \\\\ \\leftarrow \\\\ \\leftarrow \\\\ \\leftarrow \\end{matrix}\\left\\{ {a \\in \\mathbb{C} : a{\\Lambda }_{1} \\subset {\\Lambda }_{2}}\\right\\}\n\\]\n\n\\[\n\\left( {{f}_{a} : z + {\\Lambda }_{1} \\mapsto {az} + {\\Lambda }_{2}}\\right) \\leftrightarrow + a\n\\]\n\n其中的箭头 \\( \\leftarrow \\) 也是加法群的同构. 复环面之间态射的合成与逐点加法分别翻译为 \\( \\mathbb{C} \\) 上的乘法和加法; 当 \\( {\\Lambda }_{1} = {\\Lambda }_{2} \\) 时, \\( 1 \\in \\mathbb{C} \\) 对应恒等态射 id.",
+        "id": "thm_combined_61",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 1.45. If \\( I \\) is an ideal in the Boolean algebra \\( \\mathbf{B} \\) then\\n\\n\\[ \\left( {\\forall a, b \\in \\left| \\mathbf{B}\\right| }\\right) \\left\\lbrack {a + b \\in I \\rightarrow a \\in I \\land b \\in I}\\right\\rbrack . \\]",
+        "id": "thm_combined_62",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 5.15 (Dynkin’s Formula). Let \\( G \\) be a Lie subgroup of \\( {GL}\\left( {n,\\mathbb{C}}\\right) \\). For \\( X, Y \\in \\mathfrak{g} \\) in a sufficiently small neighborhood of 0,\\n\\n\\[ \\n{e}^{X}{e}^{Y} = {e}^{Z} \\n\\]\\n\\nwhere \\( Z \\) is given by the formula\\n\\n\\[ \\nZ = \\sum \\frac{{\\left( -1\\right) }^{n + 1}}{n}\\frac{1}{\\left( {{i}_{1} + {j}_{1}}\\right) + \\cdots + \\left( {{i}_{n} + {j}_{n}}\\right) }\\frac{\\left\\lbrack {X}^{\\left( {i}_{1}\\right) },{Y}^{\\left( {j}_{1}\\right) },\\ldots ,{X}^{\\left( {i}_{1}\\right) },{Y}^{\\left( {j}_{n}\\right) }\\right\\rbrack }{{i}_{1}!{j}_{1}!\\cdots {i}_{n}!{j}_{n}!}, \\n\\]\\n\\nwhere the sum is taken over all 2n-tuples \\( \\left( {{i}_{1},\\ldots ,{i}_{n},{j}_{1},\\ldots ,{j}_{n}}\\right) \\in {\\mathbb{N}}^{2n} \\) satisfying \\( {i}_{k} + {j}_{k} \\geq 1 \\) for positive \\( n \\in \\mathbb{N} \\).",
+        "id": "thm_combined_63",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Lemma 4.3.9. \\( \\left( {{\\ell }_{n},{S}_{n}}\\right) \\) and \\( \\left( {{\\nu }_{n},{S}_{n}}\\right) \\) have the same distribution.",
+        "id": "thm_combined_64",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 9.1.8 任何传递的扩散系统与极小半 distal 系统为不交的.",
+        "id": "thm_combined_65",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Proposition 4.4. In the finite topology, \\( \\operatorname{Gal}\\left( {E : K}\\right) \\) is compact Hausdorff and totally disconnected.",
+        "id": "thm_combined_66",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例 8 求正三角形的对称 (性) 群 \\( {D}_{3} \\) 的一个 2 次实表示及其提供的矩阵表示.",
+        "id": "thm_combined_67",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Lemma 6.11.2 Let \\( X \\) be a triangle-free regular graph with valency \\( k \\geq 2 \\) , and suppose that \\( P \\) is a path of length two in \\( X \\) . If \\( X \\smallsetminus P \\cong \\operatorname{And}\\left( {k - 1}\\right) \\) , then \\( X \\cong \\operatorname{And}\\left( k\\right) \\) .",
+        "id": "thm_combined_68",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Proposition 4.8. If \\( \\varphi ,\\psi : A \\rightarrow B \\) and \\( \\chi : B \\rightarrow C \\) are homomorphisms of free right \\( R \\) -modules with finite bases, then, in any given bases of \\( A, B \\), and \\( C \\) , \\( M\\left( {\\varphi + \\psi }\\right) = M\\left( \\varphi \\right) + M\\left( \\psi \\right) \\) and \\( M\\left( {\\chi \\circ \\varphi }\\right) = M\\left( \\chi \\right) M\\left( \\varphi \\right) . \\)",
+        "id": "thm_combined_69",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "命题 5.1 如果 \\( X \\) 是道路连通、局部道路连通的 Hausdorff 空间,则 \\( p : X \\rightarrow X/f \\) 是叶数等于 \\( n \\) 的复叠映射.",
+        "id": "thm_combined_70",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 26.5.7 If \\( \\mathbf{h} : \\Omega \\rightarrow {\\mathbb{R}}^{m} \\) is Lipschitz, then there exists \\( \\overline{\\mathbf{h}} : {\\mathbb{R}}^{p} \\rightarrow {\\mathbb{R}}^{m} \\) which extends \\( \\mathbf{h} \\) and is also Lipschitz.",
+        "id": "thm_combined_71",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Lemma 10.11. Let \\( X,{\\varphi }_{0} \\) and \\( \\rho \\) be as in the preceding lemma, let \\( U \\) be an open set in \\( X \\), and let \\( \\varepsilon \\) be a positive number. If \\( f \\) is a continuous function on \\( X \\) such that \\( 0 \\leq f \\leq {\\chi }_{U} \\) and \\( {\\varphi }_{0}\\left( f\\right) > \\rho \\left( U\\right) - \\varepsilon \\), and if \\( K \\) denotes the set \\( K = \\) \\( \\{ x \\in X : f\\left( x\\right) \\geq \\varepsilon \\} \\), then \\( \\rho \\left( {U \\smallsetminus K}\\right) \\leq {2\\varepsilon } \\).",
+        "id": "thm_combined_72",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Corollary 1. \\( {\\varphi }_{s} = {\\varphi }_{-s} \\)",
+        "id": "thm_combined_73",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Lemma 2. Let \\( {\\mathbf{x}}^{ * } \\) be a solution to problem (13.1). Then for each \\( k \\)\\n\\n\\[ f\\left( {\\mathbf{x}}^{ * }\\right) \\geq q\\left( {{c}_{k},{\\mathbf{x}}_{k}}\\right) \\geq f\\left( {\\mathbf{x}}_{k}\\right) . \\]\\n",
+        "id": "thm_combined_74",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例 1 已知 \\( \\sin \\alpha - \\frac{4}{5} \\) ,并且 \\( \\frac{\\pi }{2} < c < \\pi \\) ,求 \\( \\sin {2\\alpha },\\cos {2\\alpha } \\) 的值.",
+        "id": "thm_combined_75",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Lemma 1.7 Suppose that \\( p \\geq 3 \\) is a prime. Then all non-normal subgroups of a finite \\( p \\) -group \\( G \\) are conjugate if and only if \\( G = \\left\\langle {u, v \\mid {u}^{{p}^{n}} = 1,{v}^{p} = 1,{v}^{-1}{uv} = {u}^{1 + {p}^{n - 1}}, n \\geq 2}\\right\\rangle \\) .",
+        "id": "thm_combined_76",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 8.11.3. If \\( {X}_{1},{X}_{2},\\ldots \\) are i.i.d. with \\( E{X}_{i} = 0 \\) and \\( E{X}_{i}^{2} = 1 \\) then\\n\\n\\[ \\mathop{\\limsup }\\limits_{{n \\rightarrow \\infty }}{S}_{n}/{\\left( 2n\\log \\log n\\right) }^{1/2} = 1 \\]",
+        "id": "thm_combined_77",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "For \\( n = 0,1,2,\\ldots \\), let \\( {C}_{n} \\) be the geodesic with end-points \\( 1 + {4n} \\) and \\( 3 + {4n} \\) and let \\( {C}_{n}^{\\prime } \\) be its reflection in the imaginary axis. For each \\( n \\), let \\( {g}_{n} \\) be the hyperbolic element that preserves \\( {H}^{2} \\) and that maps the exterior of \\( {C}_{n} \\) onto the interior of \\( {C}_{n}^{\\prime } \\) and let \\( G \\) be the group generated by the \\( {g}_{n} \\). By Poincaré’s Theorem (Section 9.8), the region exterior to all of the \\( {C}_{n} \\) and \\( {C}_{n}^{\\prime } \\) is a fundamental domain for \\( G \\).",
+        "id": "thm_combined_78",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "引理 14.13 设 \\( C \\) 为复平面上的回路.\n\n(a) 如果 \\( c \\) 位于 \\( C \\) 内,则 \\( {f}_{c}^{-1}\\left( C\\right) \\) 是以 \\( C \\) 的内部的逆像为它的内部的回路.\n\n(b) 若 \\( c \\) 在 \\( C \\) 上,则 \\( {f}_{c}^{-1}\\left( C\\right) \\) 为一 8 字形图,使得 \\( C \\) 内部的逆像为两个回路的内部.\n\n(c) 若 \\( c \\) 在 \\( C \\) 外,则 \\( {f}_{c}^{-1}\\left( C\\right) \\) 有两个不交的回路,使得 \\( C \\) 内部的逆像为两个回路的内部.",
+        "id": "thm_combined_79",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例 5 求函数 \\( f\\left( x\\right) = \\operatorname{arctg}x \\) 的马克劳林展式.",
+        "id": "thm_combined_80",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Proposition 4.92. If \\( T : V \\rightarrow V \\) is a linear transformation, where \\( \\dim \\left( V\\right) = n \\) , then \\( T \\) has at most \\( n \\) eigenvalues.",
+        "id": "thm_combined_81",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "引理 2.2 (二次下界) 设 \\( f\\left( x\\right) \\) 是参数为 \\( m \\) 的可微强凸函数,则如下不等式成立:\n\n\\[\nf\\left( y\\right) \\geq f\\left( x\\right) + \\nabla f{\\left( x\\right) }^{\\mathrm{T}}\\left( {y - x}\\right) + \\frac{m}{2}\\parallel y - x{\\parallel }^{2},\\;\\forall x, y \\in \\operatorname{dom}f.\n\\]",
+        "id": "thm_combined_82",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 9.34 (Flows on Manifolds with Boundary). The conclusions of Theorem 9.12 remain true if \\( M \\) is a smooth manifold with boundary and \\( V \\) is a smooth vector field on \\( M \\) that is tangent to \\( \\partial M \\) .",
+        "id": "thm_combined_83",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Proposition 3.7.4 ([Scii 76]) If \\( P, Q \\) are standard skew tableaux, then\\n\\n\\[ P \\cong Q \\Rightarrow P\\overset{K}{ \\cong }Q. \\]\\n",
+        "id": "thm_combined_84",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Not every integral domain is a unique factorization domain.",
+        "id": "thm_combined_85",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "命题29 一直线截平行直线所得的内错角相等, 同位角相等, 同侧内角之和等于二直角.",
+        "id": "thm_combined_86",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 3.3.3 设 \\( f : X \\rightarrow Y \\) 是空间 \\( X \\) 到空间 \\( Y \\) 上的完备映射. 如果 \\( X \\) 是 \\( {T}_{2} \\) 、正则或满足第二可数公理,则空间 \\( Y \\) 也分别是 \\( {T}_{2} \\) 、正则或满足第二可数公理.",
+        "id": "thm_combined_87",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 10.1.6. Let \\( f : {\\mathbf{R}}^{n} \\rightarrow \\left\\lbrack {0,\\infty }\\right\\rbrack \\) . Then \\( f \\) is excessive w.r.t. \\( {X}_{t} \\) if and only if \\( f \\) is superharmonic w.r.t. \\( {X}_{t} \\) .",
+        "id": "thm_combined_88",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 1.2 The map \\( F : \\mathbb{H} \\rightarrow \\mathbb{D} \\) is a conformal map with inverse \\( G : \\mathbb{D} \\rightarrow \\mathbb{H}. \\)",
+        "id": "thm_combined_89",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "引理 8.6. 设 \\( \\mathfrak{U} \\) 是 \\( M \\) 的局部有限的,测地凸的开覆盖. 则对任意 \\( p \\geq 0 \\) ,下面两序列正合\n\n(i) \\( 0 \\rightarrow \\mathop{\\prod }\\limits_{{r \\in {N}_{s}}}R \\rightarrow {\\Omega }^{0}\\left( {\\underline{N}, u}\\right) \\overset{{\\delta }^{\\prime \\prime }}{ \\rightarrow }{\\Omega }^{1}\\left( {\\underline{N}, u}\\right) \\overset{{\\delta }^{\\prime \\prime }}{ \\rightarrow }\\cdots \\) ,\n\n(ii) \\( 0 \\rightarrow \\mathop{\\prod }\\limits_{{r : {N}_{ * }}}\\measuredangle \\rightarrow {S}^{0}\\left( {N, u;\\measuredangle }\\right) \\overset{{\\delta }^{\\prime }}{ \\rightarrow }{S}^{1}\\left( {u, u;\\measuredangle }\\right) \\overset{{\\delta }^{\\prime \\prime }}{ \\rightarrow }\\cdots \\) , 其中 \\( {N}_{p} - {N}_{p}{ll} \\) .",
+        "id": "thm_combined_90",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Corollary 8.39. Every Lie group admits a left-invariant smooth global frame, and therefore every Lie group is parallelizable.",
+        "id": "thm_combined_91",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Corollary 2.20. Let \\( A \\) be an \\( n \\times n \\) symmetric matrix. Then \\( A \\) is positive semidefinite if and only if all eigenvalues of \\( A \\) are nonnegative. Moreover, \\( A \\) is positive definite if and only if all eigenvalues of \\( A \\) are positive.",
+        "id": "thm_combined_92",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Example 2.15 This example is like the previous one, but the constant \\( a \\) is replaced by a variable \\( x \\) . We will negate the following statement.\\n\\n\\( R \\) : If \\( x \\) is odd then \\( {x}^{2} \\) is odd.",
+        "id": "thm_combined_93",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Assume that a gambler making fair unit bets on coin flips will abandon the game when her fortune falls to 0 or rises to \\( n \\) . Let \\( {X}_{t} \\) be gambler’s fortune at time \\( t \\) and let \\( \\tau \\) be the time required to be absorbed at one of 0 or \\( n \\) . Assume that \\( {X}_{0} = k \\), where \\( 0 \\leq k \\leq n \\) . Then\\n\\n\\[ \\n{\\mathbf{P}}_{k}\\left\\{ {{X}_{\\tau } = n}\\right\\} = k/n \\n\\]\\n\\n(2.1)\\n\\n\\[ \\n{\\mathbf{E}}_{k}\\left( \\tau \\right) = k\\left( {n - k}\\right) \\n\\]\\n\\n\\( \\left( {2.2}\\right) \\)",
+        "id": "thm_combined_94",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "A university creates a mentoring program, which matches each freshman student with a senior student as his or her mentor. Within this program it is guaranteed that each freshman gets precisely one mentor, however two freshmen may receive the same mentor. Does the assignment of freshmen to mentor, or mentor to freshmen describe a function? If so, what is its domain, what is its range?",
+        "id": "thm_combined_95",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Lemma 11.18. If \\( {a}_{n} \\) denotes the length of the side of a regular \\( n \\) -sided polygon inscribed in a circle of radius 1, then\\n\\n\\[ \\n{a}_{2n} = \\sqrt{2 - \\sqrt{4 - {a}_{n}^{2}}} \\n\\]",
+        "id": "thm_combined_96",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例 2.1.6 设 \\( \\mathcal{X} = C\\left( \\bar{\\Omega }\\right) \\) ,若规定\n\n\\[\nf\\left( x\\right) \\triangleq {\\int }_{\\Omega }x\\left( \\xi \\right) \\mathrm{d}\\xi \\;\\left( {\\forall x \\in \\mathcal{X}}\\right) ,\n\\]\n\n则 \\( f \\) 是一个线性泛函,但 \\( x\\left( \\xi \\right) \\mapsto {\\int }_{\\Omega }{x}^{2}\\left( \\xi \\right) \\mathrm{d}\\xi \\) 却不是线性泛函.",
+        "id": "thm_combined_97",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Solve the differential equation \\( {y}^{\\prime } + {2y} = \\delta \\left( {t - 1}\\right) \\) for \\( t > 0 \\) with the initial value \\( y\\left( 0\\right) = 1 \\) .",
+        "id": "thm_combined_98",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Proposition 2.3 If \\( f \\) is holomorphic at \\( {z}_{0} \\), then\\n\\n\\[ \\n\\frac{\\partial f}{\\partial \\bar{z}}\\left( {z}_{0}\\right) = 0\\;\\text{ and }\\;{f}^{\\prime }\\left( {z}_{0}\\right) = \\frac{\\partial f}{\\partial z}\\left( {z}_{0}\\right) = 2\\frac{\\partial u}{\\partial z}\\left( {z}_{0}\\right) .\\n\\]\\n\\nAlso, if we write \\( F\\left( {x, y}\\right) = f\\left( z\\right) \\), then \\( F \\) is differentiable in the sense of real variables, and\\n\\n\\[ \\n\\det {J}_{F}\\left( {{x}_{0},{y}_{0}}\\right) = {\\left| {f}^{\\prime }\\left( {z}_{0}\\right) \\right| }^{2}.\\n\\]",
+        "id": "thm_combined_99",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "命题 2.4.14 设 \\( \\mathbf{Q} \\) 不可约,则以下几条等价.\n\n(1) 所有状态正常返; (2) 存在正常返态; (3) 不变分布存在.\n\n特别地,若 \\( \\mu \\) 是不变分布,则 \\( {\\mu }_{i} = 1/\\left( {{q}_{i}{E}_{i}{\\sigma }_{i}}\\right) \\).",
+        "id": "thm_combined_100",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 2.9.5. 若 \\( {f}_{n} \\in {L}^{p},1 \\leq p < \\infty \\) ,同时 \\( {\\begin{Vmatrix}{f}_{n} - {f}_{m}\\end{Vmatrix}}_{p} \\rightarrow 0 \\) , 当 \\( n, m \\rightarrow \\infty \\) . 则存在 \\( f \\in {L}^{p} \\) 使得 \\( \\begin{Vmatrix}{f - {f}_{n}}\\end{Vmatrix} \\rightarrow 0 \\) ,当 \\( n \\rightarrow \\infty \\) .",
+        "id": "thm_combined_101",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 7.1 The divisor function \\( d\\left( n\\right) \\) is multiplicative.",
+        "id": "thm_combined_102",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "命题 9.6.6 任何极小系统交于它的任何非平凡伪因子.",
+        "id": "thm_combined_103",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Corollary 39.2.4 Let \\( U \\) be an open set and let \\( {\\left. \\mathfrak{S}\\right| }_{U} \\) denote the restrictions of functions of \\( \\mathfrak{S} \\) to \\( U \\) . Then \\( {\\left. \\mathfrak{S}\\right| }_{U} \\) is dense in \\( {H}^{t}\\left( U\\right) \\) .",
+        "id": "thm_combined_104",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "引理 5.2. 设 \\( q \\in \\left( {0,\\infty }\\right), a \\in \\left( {1,\\infty }\\right), h\\left( t\\right) \\) 与 \\( H\\left( t\\right) \\) 是定义于 \\( \\left\\lbrack {{t}_{0},\\infty }\\right) \\) 上的非负非增函数且满足:\n\n(1) \\( \\mathop{\\lim }\\limits_{{t \\rightarrow \\infty }}h\\left( t\\right) = \\mathop{\\lim }\\limits_{{t \\rightarrow \\infty }}H\\left( t\\right) = 0 \\) ,\n\n(2) \\( {\\Phi }_{q}\\left( {t;h}\\right) \\leq a\\left\\lbrack {{t}^{q}h\\left( t\\right) + {t}^{q}H\\left( t\\right) }\\right\\rbrack \\) ,\n\n则对于 \\( p \\in \\left\\lbrack {q,\\frac{a}{a - 1}q}\\right) \\) ,我们有:\n\n\\[\n{\\Phi }_{p}\\left( {{t}_{0};h}\\right) \\leq \\frac{{t}_{0}^{p - q}}{{aq} - \\left( {a - 1}\\right) p}\\left\\lbrack {q{\\Phi }_{q}\\left( {{t}_{0};h}\\right) }\\right.\n\\]\n\n\\[\n\\left. {+a\\left( {p - q}\\right) {\\Phi }_{p}\\left( {{t}_{0};H}\\right) }\\right\\rbrack \\text{.}\n\\]",
+        "id": "thm_combined_105",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 6.3.2 设 \\( {\\varphi }_{m} \\) 是 \\( G \\) 上的近似单位,它满足以下条件:\n\n(i) supp \\( {\\varphi }_{m} \\subset K, K \\subset G \\) 是与 \\( m \\) 无关的紧集;\n\n(ii) 任给 0 邻域 \\( V \\subset G \\) ,存在 \\( {m}_{0} \\) ,使得 \\( \\mathop{\\sup }\\limits_{{m \\geq {m}_{0}}}\\begin{Vmatrix}{\\varphi }_{m}\\end{Vmatrix}{V}^{\\mathrm{c}}\\parallel \\infty < \\infty \\) .\n\n设 \\( f \\in {L}^{1}\\left( {G, E}\\right) ,{f}_{m} = f * {\\varphi }_{m}, x \\) 是 \\( f \\) 的连续点,则 \\( {f}_{m}\\left( x\\right) \\rightarrow f\\left( x\\right) \\) .",
+        "id": "thm_combined_106",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Corollary 3.13. Let \\( N \\) be a normal subgroup of a group \\( G \\) . Then \\( G \\) is solvable if and only if both \\( N \\) and \\( G/N \\) are solvable.",
+        "id": "thm_combined_107",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 13. In \\( {\\mathbf{R}}^{n} \\), every connected open set \\( U \\) is broken-line-wise connected.",
+        "id": "thm_combined_108",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 9 对 \\( {N}_{n} \\times {k}_{n} \\) 的任意非平凡特征标 \\( \\left( {\\chi ,\\psi }\\right) \\) . 有\n\n\\[\n\\left| {\\mathop{\\sum }\\limits_{{x \\in {S}_{n}}}\\chi \\left( s\\right) \\psi \\left( s\\right) }\\right| \\leq \\left( {{2n} - 2}\\right) \\sqrt{q}\n\\]",
+        "id": "thm_combined_109",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Proposition 4.23. (a) rank \\( x \\) is not a limit.\\n\\n(b) If \\( y \\in x \\) and rank \\( x = \\alpha \\) then rank \\( y < \\alpha \\) .",
+        "id": "thm_combined_110",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "The Lie algebras \\( \\mathrm{u}\\left( n\\right) \\) and \\( \\mathrm{{su}}\\left( n\\right) \\) of \\( \\mathrm{U}\\left( n\\right) \\) and \\( \\mathrm{{SU}}\\left( n\\right) \\) are given by\\n\\n\\[ \\mathfrak{u}\\left( n\\right) = \\left\\{ {X \\in {M}_{n}\\left( \\mathbb{C}\\right) \\mid {X}^{ * } = - X}\\right\\} \\]\\n\\n\\[ \\mathfrak{{su}}\\left( n\\right) = \\{ X \\in u\\left( n\\right) \\mid \\operatorname{trace}\\left( X\\right) = 0\\} . \\]\\n\\nThe Lie algebra \\( \\operatorname{so}\\left( n\\right) \\) of \\( \\mathrm{{SO}}\\left( n\\right) \\) is given by\\n\\n\\[ \\operatorname{so}\\left( n\\right) = \\left\\{ {X \\in {M}_{n}\\left( \\mathbb{R}\\right) \\mid {X}^{tr} = - X}\\right\\} . \\]\\n\\nFinally, the Lie algebra of \\( \\mathrm{O}\\left( n\\right) \\) is equal to \\( \\mathrm{{so}}\\left( n\\right) \\) .",
+        "id": "thm_combined_111",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 12.2.2. Let \\( u \\in {W}^{1,1}\\left( \\Omega \\right) \\) be a weak solution of \\( {\\Delta u} = f, f \\in {L}^{p}\\left( \\Omega \\right) \\) , \\( 1 < p < \\infty \\), i.e., \\[ \\int {Du} \\cdot {D\\varphi } = - \\int {f\\varphi }\\;\\text{ for all }\\varphi \\in {C}_{0}^{\\infty }\\left( \\Omega \\right) . \\] Then \\( u \\in {W}^{2, p}\\left( {\\Omega }^{\\prime }\\right) \\) for any \\( {\\Omega }^{\\prime } \\subset \\subset \\Omega \\), and \\[ \\parallel u{\\parallel }_{{W}^{2, p}\\left( {\\Omega }^{\\prime }\\right) } \\leq \\operatorname{const}\\left( {\\parallel u{\\parallel }_{{L}^{p}\\left( \\Omega \\right) } + \\parallel f{\\parallel }_{{L}^{p}\\left( \\Omega \\right) }}\\right) , \\] with a constant depending on \\( p, d,{\\Omega }^{\\prime } \\), and \\( \\Omega \\) . Also, \\[ {\\Delta u} = f\\;\\text{ almost everywhere in }\\Omega . \\]",
+        "id": "thm_combined_112",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 14. If \\( \\mathbf{Q} \\) is cyclic and \\( \\mathbf{V} \\) is a \\( v \\) -parallelogram of \\( \\mathbf{Q} \\), the quadrilateral of the valtitudes relative to \\( \\mathbf{V} \\) has the same anticenter of \\( \\mathbf{Q} \\) .",
+        "id": "thm_combined_113",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 2 (Schoenberg 定理) 设 \\( \\varphi \\) 是 (2) 式给出的线性泛函. 给定结点: \\( a = {t}_{0} < {t}_{1} < \\cdots < {t}_{n} = \\) \\( b \\) ,其中 \\( n > N \\) . 在所有形如 \\( \\mathop{\\sum }\\limits_{{i = 0}}^{n}{c}_{i}{\\widehat{t}}_{i} \\) 并且在 \\( {\\Pi }_{m} \\) 上与 \\( \\varphi \\) 一致的泛函中, Sard 意义下 \\( \\varphi \\) 的最佳逼近是 \\( \\varphi \\circ L \\) ,其中 \\( L \\) 是产生给定结点上 \\( {2m} + 1 \\) 次自然样条插值的线性算子.",
+        "id": "thm_combined_114",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 \\( {\\mathbf{{6.5.1}}}^{\\left\\lbrack {194}\\right\\rbrack } \\) 设 \\( \\mathcal{F} = {\\left\\{ {F}_{\\alpha }\\right\\} }_{\\alpha \\in A} \\) 是空间 \\( X \\) 的局部有限闭覆盖,每一闭集 \\( {F}_{\\alpha }\\left( {\\alpha \\in A}\\right) \\) 是 \\( X \\) 的弱仿紧子空间,则 \\( X \\) 是弱仿紧空间.",
+        "id": "thm_combined_115",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 2 设 \\( \\left\\{ {x}_{n}\\right\\} \\) 是实数序列,则以下三条陈述互相等价:\n\n(1) \\( \\mathop{\\lim }\\limits_{{n \\rightarrow \\infty }}{x}_{n} = \\overline{\\lim }{x}_{n} = \\xi \\) ;\n\n(2) \\( \\mathop{\\lim }\\limits_{{x \\rightarrow \\infty }}{x}_{n} = \\xi \\) ;\n\n（3） \\( \\left\\{ {x}_{n}\\right\\} \\) 只有唯一极限点 \\( \\xi \\) .",
+        "id": "thm_combined_116",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 2 设 \\( L \\) 是有限长的上半模格,则\n\n(1) \\( L \\) 是有补格 \\( \\Leftrightarrow I \\) 是原子的并.",
+        "id": "thm_combined_117",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "命题 46 问题 32\n\n设任意种类的向心力, 力的中心以及物体在其上运动的平面均为已知, 而且曲线图形的面积可以求出; 求一物体以给定速度沿位于上述平面上的给定直线方向脱离一给定处所的运动。",
+        "id": "thm_combined_118",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "引理 8 设 \\( \\mathcal{A} \\) 是 \\( \\mathcal{C}\\left( K\\right) \\) 的一个子代数, \\( 1 \\in \\mathcal{A} \\) ,则有\n\n\\[\nf \\in \\mathcal{A} \\Rightarrow \\left| f\\right| \\in \\overline{\\mathcal{A}}.\n\\]",
+        "id": "thm_combined_119",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Proposition 3.5 Let \\( {\\left( {X}_{n}\\right) }_{n \\geq 0} \\) be a martingale. Let \\( \\phi : \\mathbb{R} \\rightarrow \\mathbb{R} \\) be a convex function such that for all \\( n \\geq 0,\\phi \\left( {X}_{n}\\right) \\) is integrable. Then \\( {\\left( \\phi \\left( {X}_{n}\\right) \\right) }_{n \\geq 0} \\) is a submartingale.\\n\\nThe proposition also holds if \\( X \\) is a submartingale and \\( \\phi \\) is non-decreasing.",
+        "id": "thm_combined_120",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 8.1.4 设 \\( p \\in \\left\\lbrack {2,\\infty }\\right\\rbrack, t \\neq 0 \\) . 那么 \\( Q\\left( t\\right) \\) 可以延拓成属于 \\( \\mathcal{L}\\left( {{L}^{{p}^{\\prime }}\\left( {\\mathbb{R}}^{N}\\right) }\\right. \\) , \\( \\left. {{L}^{p}\\left( {\\mathbb{R}}^{N}\\right) }\\right) \\) 的算子. 此外,还有\n\n\\[\n\\parallel Q\\left( t\\right) {\\parallel }_{\\mathcal{L}\\left( {{L}^{{p}^{\\prime }},{L}^{p}}\\right) } \\leq {\\left( 4\\pi \\left| t\\right| \\right) }^{N\\left( {\\frac{1}{p} - \\frac{1}{2}}\\right) },\\;\\forall t \\neq 0.\n\\]",
+        "id": "thm_combined_121",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Lemma 9.1 (Cotlar’s Lemma). Let \\( H \\) be a Hilbert space, \\( \\left\\{ {T}_{j}\\right\\} \\) a sequence of bounded linear operators on \\( H \\) with adjoints \\( \\left\\{ {T}_{j}^{ * }\\right\\} \\), and \\( \\{ a\\left( j\\right) \\} \\) a sequence of non-negative numbers such that\\n\\n\\[ \\n{\\begin{Vmatrix}{T}_{i}{T}_{j}^{ * }\\end{Vmatrix}}_{\\mathcal{L}\\left( H\\right) } + {\\begin{Vmatrix}{T}_{i}^{ * }{T}_{j}\\end{Vmatrix}}_{\\mathcal{L}\\left( H\\right) } \\leq a\\left( {i - j}\\right) \\n\\]\\n\\nThen for all integers \\( n \\) and \\( m, n \\leq m \\) ,\\n\\n\\[ \\n{\\begin{Vmatrix}\\mathop{\\sum }\\limits_{{j = n}}^{m}{T}_{j}\\end{Vmatrix}}_{\\mathcal{L}\\left( H\\right) } \\leq \\mathop{\\sum }\\limits_{{i = - \\infty }}^{\\infty }a{\\left( i\\right) }^{1/2} \\n\\]",
+        "id": "thm_combined_122",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "推论 3 设 \\( \\langle X, Y\\rangle \\) 是对偶空间, \\( \\left\\{ {{A}_{\\alpha },\\alpha \\in \\mathcal{A}}\\right\\} \\) 是 \\( X \\) 中的一族均衡凸 \\( \\sigma \\left( {X, Y}\\right) \\) 闭集,而 \\( A = \\cap \\left\\{ {{A}_{\\alpha },\\alpha \\in \\mathcal{A}}\\right\\} \\) ,则 \\( {A}^{0} \\) 等于 \\( \\cup \\left\\{ {A}_{\\alpha }^{0}\\right. \\) , \\( \\alpha \\in \\mathcal{A}\\} \\) 的均衡凸 \\( \\sigma \\left( {Y, X}\\right) \\) 闭包.",
+        "id": "thm_combined_123",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 2 三个不同的点 \\( A, B, C \\) 共线的充要条件是: 存在三个都不是零的数 \\( l \\) , \\( m, n \\) ,使\n\n\\[\nl\\mathbf{A} + m\\mathbf{B} + n\\mathbf{C} = \\mathbf{0}, l + m + n = 0.\n\\]",
+        "id": "thm_combined_124",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 104.9. (Handle Addition Theorem) Let \\( M \\) be a compact smooth manifold and let \\( f : M \\rightarrow \\mathbb{R} \\) be a smooth function. Furthermore let \\( a < b \\in \\mathbb{R} \\) such that \\( a \\) and \\( b \\) are regular values and such that \\( {f}^{-1}\\left( \\left\\lbrack {a, b}\\right\\rbrack \\right) \\cap \\partial M = \\varnothing \\) .\\n\\n(1) Suppose there exists a single critical point \\( P \\in {f}^{-1}\\left( \\left\\lbrack {a, b}\\right\\rbrack \\right) \\) . We set \\( k \\mathrel{\\text{:=}} \\operatorname{index}\\left( {f, P}\\right) \\) . If \\( P \\) is non-degenerate, then \\( {M}_{b} \\) is diffeomorphic to the result of attaching a \\( k \\) -handle to \\( {M}_{a} \\) .",
+        "id": "thm_combined_125",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 41 若 \\( a, b \\) 和 \\( {a}^{\\prime },{b}^{\\prime } \\) 是两个相似三角形的对应边,则 \\( a : b = {a}^{\\prime } : {b}^{\\prime } \\) .",
+        "id": "thm_combined_126",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例题 3.4.5 数列 \\( \\left\\{ {b}_{n}\\right\\} \\) 由 \\( {b}_{1} = 1 \\) 和 \\( {b}_{n + 1} = 1 + \\frac{1}{{b}_{n}}\\left( {n \\in {\\mathbf{N}}_{ + }}\\right) \\) 生成. 讨论数列 \\( \\left\\{ {b}_{n}\\right\\} \\) 的敛散性,若收敛则求出其极限.",
+        "id": "thm_combined_127",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理7.3 1) 如果赋值环 \\( R \\) 是诺德环,那么 \\( \\dim R \\leq 1 \\) . 此时只有两种可能: \\( \\dim R = 0 \\Rightarrow R = K;\\dim R = 1 \\Rightarrow R \\) 是正则诺德局部环。",
+        "id": "thm_combined_128",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 12. Let \\( K \\) be a complex. Then the following conditions are equivalent:\\n\\n(1) \\( K \\) is connected.\\n\\n(2) \\( \\left| K\\right| \\) is pathwise connected.\\n\\n(3) \\( \\left| K\\right| \\) is connected.",
+        "id": "thm_combined_129",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 21.12 For any oriented compact smooth manifold \\( M \\) ,\\n\\n\\[ I\\left( {e\\left( {\\tau }_{M}\\right) }\\right) = \\chi \\left( M\\right) \\]",
+        "id": "thm_combined_130",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "引理 1.9 如果在引理 1.8 中的各 \\( {Y}_{\\lambda }\\left( {\\lambda \\in \\Lambda }\\right) \\) 是 \\( {\\mathrm{C}}^{r} \\) 流形,并且\n\n\\[\n{h}_{\\mu } \\circ {h}_{1}^{-1} : {h}_{\\lambda }\\left( {{E}_{1} \\cap {E}_{\\mu }}\\right) \\rightarrow {h}_{\\mu }\\left( {{E}_{1} \\cap {E}_{\\mu }}\\right)\n\\]\n\n是 \\( {C}^{\\prime } \\) 同胚,则可在 \\( E = \\mathop{\\bigcup }\\limits_{{\\lambda \\in \\Lambda }}{E}_{\\lambda } \\) 上引入 \\( C \\) 微分流形结构,使得各\n\n\\[\n{h}_{\\lambda } : {E}_{\\lambda } \\rightarrow {Y}_{\\lambda }\n\\]\n\n是 \\( {\\mathrm{C}}^{r} \\) 微分同胚.",
+        "id": "thm_combined_131",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 1. Every uniform elliptic cylindrical wedge is reducible.",
+        "id": "thm_combined_132",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Corollary 1.5 Let \\( x : {M}^{n} \\rightarrow {\\mathbb{R}}_{1}^{n + 1} \\) be a complete space-like \\( \\lambda \\) -hypersurface with weight \\( s = \\langle x, x\\rangle \\) . Suppose \\( S - \\frac{{H}^{2}}{n} \\) is constant. If (1.5) and (1.7) are satisfied, then \\( x \\) is isometric to either the hyperbolic space \\( {\\mathbb{H}}^{n}\\left( {-{r}^{-2}}\\right) \\subset {\\mathbb{R}}_{1}^{n + 1} \\) with \\( r \\geq {\\left( \\frac{n}{2}\\right) }^{\\frac{1}{4}} \\) or the hyperplane \\( {\\mathbb{R}}^{n} \\subset {\\mathbb{R}}_{1}^{n + 1} \\) .",
+        "id": "thm_combined_133",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "引理 2.15 设 \\( A : {\\mathbf{R}}^{n + 1} \\rightarrow {\\mathbf{R}}^{n + 1} \\) 是非退化线性映射,则有\n\n\\[\nW\\left( {A \\mid {S}_{\\rho },0}\\right) = \\operatorname{sgn}\\left( {\\det A}\\right) ,\n\\]\n\n这里\n\n\\[\n{S}_{\\rho } = {S}_{\\rho }^{n} = \\left\\{ {x \\in {\\mathbf{R}}^{n + 1} \\mid \\parallel x\\parallel = \\rho }\\right\\} ,\n\\]\n\n并且 \\( {S}_{\\rho } \\) 赋有“外向型”诱导定向.",
+        "id": "thm_combined_134",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "(a) If \\( {S}_{n} = {3}^{n}, n \\geq 0 \\), then\\n\\n\\[ G\\left( {S;z}\\right) = 1 + {3z} + 9{z}^{2} + {27}{z}^{3} + \\cdots \\]\\n\\n\\[ = \\mathop{\\sum }\\limits_{{n = 0}}^{\\infty }{3}^{n}{z}^{n} \\]\\n\\n\\[ = \\mathop{\\sum }\\limits_{{n = 0}}^{\\infty }{\\left( 3z\\right) }^{n} \\]",
+        "id": "thm_combined_135",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "命题 2.19 对于 \\( M \\in {\\mathcal{N}}_{2} \\) ,存在唯一零初值可料可积右连增过程 \\( {A}_{t} \\) ,使 \\( {M}_{t}^{2} - {A}_{t} \\) 是鞅.",
+        "id": "thm_combined_136",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 4. 16 椭圆由一对共轭直径完全确定.",
+        "id": "thm_combined_137",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Proposition 3.1.9. Let \\( {F}^{\\prime }/{K}^{\\prime } \\) be an algebraic extension of the function field \\( F/K \\) . For \\( 0 \\neq x \\in F \\) let \\( {\\left( x\\right) }_{0}^{F},{\\left( x\\right) }_{\\infty }^{F},{\\left( x\\right) }^{F} \\) resp. \\( {\\left( x\\right) }_{0}^{{F}^{\\prime }},{\\left( x\\right) }_{\\infty }^{{F}^{\\prime }},{\\left( x\\right) }^{{F}^{\\prime }} \\) denote the zero, pole, principal divisor of \\( x \\) in \\( \\operatorname{Div}\\left( F\\right) \\) resp. in \\( \\operatorname{Div}\\left( {F}^{\\prime }\\right) \\) . Then\\n\\n\\[{\\operatorname{Con}}_{{F}^{\\prime }/F}\\left( {\\left( x\\right) }_{0}^{F}\\right) = {\\left( x\\right) }_{0}^{{F}^{\\prime }},{\\operatorname{Con}}_{{F}^{\\prime }/F}\\left( {\\left( x\\right) }_{\\infty }^{F}\\right) = {\\left( x\\right) }_{\\infty }^{{F}^{\\prime }}\\text{, and}{\\operatorname{Con}}_{{F}^{\\prime }/F}\\left( {\\left( x\\right) }^{F}\\right) = {\\left( x\\right) }^{{F}^{\\prime }}\\text{.}",
+        "id": "thm_combined_138",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 8.4.4 Let \\( \\Gamma \\subset \\operatorname{PSL}\\left( {2,\\mathbb{C}}\\right) \\) be an arithmetic Kleinian group. Then \\( \\operatorname{Comm}\\left( \\Gamma \\right) = P\\left( {A{\\Gamma }^{ * }}\\right) .",
+        "id": "thm_combined_139",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Lemma 8.2.10. If \\( I \\subset S \\) is a graded ideal with linear resolution, then \\( \\mathfrak{m}I \\) has again a linear resolution.",
+        "id": "thm_combined_140",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "命题 10 若 \\( {\\sigma }_{A} \\) 是非极小拓扑传递的,则 \\( P\\left( {\\sigma }_{A}\\right) \\) 是无限非闭集合.",
+        "id": "thm_combined_141",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Let \\( \\left( P\\right) \\) be the following linear program in standard form.\\n\\n\\[ \\n\\text{maximize} {x}_{1} + {x}_{2} \\n\\]\\n\\nsubject to\\n\\n\\[ \\n- {x}_{1} + {x}_{2} + {x}_{3} = 1 \\n\\]\\n\\n\\[ \\n{x}_{1} + {x}_{4} = 3 \\n\\]\\n\\n\\[ \\n{x}_{2} + {x}_{5} = 2 \\n\\]\\n\\n\\[ \\n{x}_{1} \\geq 0, {x}_{2} \\geq 0, {x}_{3} \\geq 0, {x}_{4} \\geq 0, {x}_{5} \\geq 0. \\n\\]",
+        "id": "thm_combined_142",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 1 对于空间 \\( {R}^{m} \\) 的子集 \\( K \\) ,以下三条陈述相互等价:\n\n(1) \\( K \\) 是紧致集;\n\n(2) \\( K \\) 是列紧集;\n\n（3） \\( K \\) 是有界闭集.",
+        "id": "thm_combined_143",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 23.4. Let \\( A \\) be a connected subspace of \\( X \\) . If \\( A \\subset B \\subset \\bar{A} \\), then \\( B \\) is also connected.",
+        "id": "thm_combined_144",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例 6 定义一个无穷项 0,1 数列如下: 从 0 开始, 重复地将每个 0 变为 001 , 将每个 1 变为 0 .\n\n(a) 该数列是否为周期数列?",
+        "id": "thm_combined_145",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例 10 设双曲线 \\( \\frac{{y}^{2}}{{a}^{2}} - \\frac{{x}^{2}}{3} = 1 \\) 的两个焦点分别为 \\( {F}_{1}\\text{、}{F}_{2} \\) ,离心率为 2 .",
+        "id": "thm_combined_146",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例 3 二项式 \\( {x}^{n} - 1 \\) ( \\( n \\) 是自然数) 曾引起数学家们的极大兴趣,它与几何中把圆周 \\( n \\) 等分的问题有密切的关系. 因此曾对这个二项式进行了深入的研究. 最使数学家们感兴趣的是把它分解为具有整系数因子的乘积.",
+        "id": "thm_combined_147",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 2 任何无穷集 \\( A \\) 必含有可数子集.",
+        "id": "thm_combined_148",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 53. If \\( f\\left( x\\right) \\) is single-valued and continuous with \\( A, B \\) as lower and upper bounds, on an interval \\( \\overrightarrow{ab} \\) and has a single-valued inverse on the interval, \\( \\overrightarrow{AB} \\) then \\( f\\left( x\\right) \\) is monotonic on \\( \\overrightarrow{a}\\overrightarrow{b} \\) .",
+        "id": "thm_combined_149",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 4.3 设 \\( S \\) 是 \\( {\\mathbb{R}}^{n} \\) 中具有非 0 高斯曲率的光滑起出 1, 则有 \\( {L}^{p} \\) 限制性估计\n\n\\[\n{\\left( {\\int }_{{S}_{0}}{\\left| \\widehat{f}\\left( \\xi \\right) \\right| }^{2}d\\sigma \\left( \\xi \\right) \\right) }^{\\frac{1}{2}} \\leq {A}_{p}\\left( {S}_{0}\\right) \\parallel f{\\parallel }_{p},\\;f\\left( x\\right) \\in {L}^{p}\\left( {\\mathbb{R}}^{n}\\right)\n\\]\n\n\\[\n1 \\leq p \\leq {p}_{0} = \\frac{{2n} + 2}{n + 3},\n\\]\n\n这里 \\( {S}_{0} \\subset S \\) 是开子集, \\( {\\bar{S}}_{0} \\) 是 \\( S \\) 的紧子集.",
+        "id": "thm_combined_150",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "推论 4 等价的线性无关的向量组所含向量的数目相等.",
+        "id": "thm_combined_151",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 1.22 设 \\( E \\subset {\\mathbf{R}}^{n} \\) . 若 \\( E \\) 的任一开覆盖都包含有限子覆盖, 则 \\( E \\) 是有界闭集.",
+        "id": "thm_combined_152",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "For a group \\( G,\\operatorname{Inn}\\left( G\\right) \\vartriangleleft \\operatorname{Aut}\\left( G\\right) \\) .",
+        "id": "thm_combined_153",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例 3 在 (19.5),假定 \\( \\min {\\alpha }_{i} = \\mu ,\\max {\\alpha }_{i} = M \\) ,那末\n\n\\[\n\\mu \\left( {x, x}\\right) \\leq \\left( {{A}_{{\\varphi }_{0}}\\left( x\\right) ,{\\varphi }_{0}\\left( x\\right) }\\right) \\cdot : M\\left( {x, x}\\right) ,\n\\]\n\n或用 \\( x \\in V \\) 的任意坐标代变数向量 \\( X \\) (以下不预先声明时, \\( X \\) 总在这意义下使用),\n\n\\[\n\\mu \\left( {X, X}\\right) \\leq \\left( {{AX}, X}\\right) \\leq M\\left( {X, X}\\right) .\n\\]",
+        "id": "thm_combined_154",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例 5 求解边值问题\n\n\\[\n\\left\\{ \\begin{array}{l} {y}^{\\prime \\prime } + {3y} = \\cos x, \\\\ y\\left( 0\\right) = \\frac{1}{2}, y\\left( \\pi \\right) = - \\frac{1}{2}. \\end{array}\\right.\n\\]",
+        "id": "thm_combined_155",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Lemma 6.8. If \\( \\sum \\) is a comprehensive subset of a monoid \\( M \\) such that all left divisors of elements of \\( \\sum \\) belong to \\( \\sum \\), then the monoid homomorphism \\( p : {M}_{\\sum } \\rightarrow M \\) is an isomorphism.",
+        "id": "thm_combined_156",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例题 3.6.2 设数列 \\( \\left\\{ {b}_{n}\\right\\} \\) 由 \\( {b}_{1} = 1 \\) 和 \\( {b}_{n + 1} = 1 + \\frac{1}{{b}_{n}} \\) 生成. 讨论数列 \\( \\left\\{ {b}_{n}\\right\\} \\) 的敛散性, 若收敛则求出其极限.",
+        "id": "thm_combined_157",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例 4 令 \\( {b}_{1} = \\left\\lbrack \\begin{array}{l} 2 \\\\ 1 \\end{array}\\right\\rbrack ,{b}_{2} = \\left\\lbrack \\begin{array}{r} - 1 \\\\ 1 \\end{array}\\right\\rbrack, x = \\left\\lbrack \\begin{array}{l} 4 \\\\ 5 \\end{array}\\right\\rbrack ,\\mathcal{B} = \\left\\{ {{b}_{1},{b}_{2}}\\right\\} \\) ,求出 \\( x \\) 相对于 \\( \\mathcal{B} \\) 的坐标向量 \\( {\\left\\lbrack x\\right\\rbrack }_{B} \\) .",
+        "id": "thm_combined_158",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 1 如果函数 \\( f\\left( x\\right) \\) 为 \\( \\left( P\\right) \\) 可积,那么它几乎处处有限.",
+        "id": "thm_combined_159",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例6.5 令 \\( \\bar{E} = \\{ f \\in C\\left( {0, + \\infty }\\right) ;f\\left( {+\\infty }\\right) = 0,{f}^{\\prime }\\left( {0 + }\\right) = 0\\} \\) , 而且当 \\( f \\in {C}_{0}^{\\infty }\\left( {0, + \\infty }\\right) ,{\\mathcal{A}}_{2}f = \\frac{1}{2}{f}^{\\prime \\prime } \\) . 则以 \\( E \\) 为定义域,以 \\( {\\mathcal{A}}_{2} \\) 为生成元的半群 \\( \\left\\{ {P}_{t}\\right\\} \\) 对应的马氏过程,有转移密度族\n\n\\[\n\\left\\{ {P\\left( {t, x, y}\\right) = \\frac{1}{\\sqrt{2\\pi t}}\\left( {\\exp \\left( {-\\frac{{\\left| y - x\\right| }^{2}}{2t}}\\right) + \\exp \\left( \\frac{{\\left| y + x\\right| }^{2}}{2t}\\right) ,}\\right. }\\right.\n\\]\n\n\\[\nx, y \\in \\lbrack 0, + \\infty )\\} \\text{.}\n\\]",
+        "id": "thm_combined_160",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 4.1. Let \\( S \\subset {M}_{K} \\) be a finite set of places, and let \\( a, b \\in {K}^{ * } \\) . Then the equation\\n\\n\\[ \\n{ax} + {by} = 1 \\n\\]\\n\\nhas only finitely many solutions in \\( S \\) -units \\( x, y \\in {R}_{S}^{ * } \\) .",
+        "id": "thm_combined_161",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 1.2 (Minkowski) If \\( 1 \\leq p < \\infty \\) and \\( f, g \\in {L}^{p} \\), then \\( f + g \\in \\) \\( {L}^{p} \\) and \\( \\parallel f + g{\\parallel }_{{L}^{p}} \\leq \\parallel f{\\parallel }_{{L}^{p}} + \\parallel g{\\parallel }_{{L}^{p}} \\) .",
+        "id": "thm_combined_162",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Proposition 7.4.3 Let \\( \\mu \\) be a miniature final segment of \\( {\\delta }_{n} \\), and let \\( U \\approx \\) \\( V \\) be two tableaux of shape \\( \\mu \\) . Then, \\( \\{ \\widehat{p}\\left( U\\right) ,\\widehat{p}\\left( V\\right) \\} \\) is an s-relation, and any two elements of \\( \\mathcal{P}\\left( {\\delta }_{n}\\right) \\) are related by a chain of s-relations of this form.",
+        "id": "thm_combined_163",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 4.12. If \\( \\lambda < {s\\mu } \\), then the \\( M/M/s \\) queue is positive recurrent.",
+        "id": "thm_combined_164",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Example 60.5.8 (Epic but not surjective)\\n\\n(a) In CRing, for instance, the inclusion \\( \\\\mathbb{Z} \\\\hookrightarrow \\\\mathbb{Q} \\) is epic (and not surjective).. Indeed, if two homomorphisms \\( \\\\mathbb{Q} \\\\rightarrow A \\) agree on every integer then they agree everywhere (why?)",
+        "id": "thm_combined_165",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例 7.4.23 函数 \\( u = u\\left( {x, y, z}\\right) \\) 在区域 \\( V \\) 内有直到二阶的连续偏导数,试证: \\( V \\) 内任何封闭光滑曲面 \\( S \\) 上的积分\n\n\\[\n{\\oint }_{S}\\frac{\\partial u}{\\partial n}\\mathrm{\\;d}S = 0\n\\]\n\n的充要条件是 \\( u \\) 为 \\( V \\) 内的调和函数\n\n(即 \\( V \\) 内恒有 \\( \\;\\left. {\\frac{{\\partial }^{2}u}{\\partial {x}^{2}} + \\frac{{\\partial }^{2}u}{\\partial {y}^{2}} + \\frac{{\\partial }^{2}u}{\\partial {z}^{2}} = 0}\\right) \\) .",
+        "id": "thm_combined_166",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 1.5. Let \\( \\eta ,\\xi \\) be vector fields on \\( Y \\) and let \\( \\mu \\) be a normal field on \\( Y \\) . Then on \\( Y \\), \\[ \\left\\langle {{D}_{\\eta }^{X}{\\mu }_{X},\\xi }\\right\\rangle = \\left\\langle {{h}_{21}\\left( {\\eta ,\\mu }\\right) ,\\xi }\\right\\rangle = \\left\\langle {\\mu , - {h}_{12}\\left( {\\eta ,\\xi }\\right) }\\right\\rangle . \\]",
+        "id": "thm_combined_167",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 2.6 设 \\( {R}_{1},{R}_{2},{R}_{3} \\) 是三个集合,则\n\n(1) \\( {R}_{1} \\circ \\left( {{R}_{2} \\cup {R}_{3}}\\right) = {R}_{1} \\circ {R}_{2} \\cup {R}_{1} \\circ {R}_{3} \\) ; (2) \\( \\left( {{R}_{1} \\cup {R}_{2}}\\right) \\circ {R}_{3} = {R}_{1} \\circ {R}_{3} \\cup {R}_{2} \\circ {R}_{3} \\) ;\n\n(3) \\( {R}_{1} \\circ \\left( {{R}_{2} \\cap {R}_{3}}\\right) \\subseteq {R}_{1} \\circ {R}_{2} \\cap {R}_{1} \\circ {R}_{3} \\) ; (4) \\( \\left( {{R}_{1} \\cap {R}_{2}}\\right) \\circ {R}_{3} \\subseteq {R}_{1} \\circ {R}_{3} \\cap {R}_{2} \\circ {R}_{3} \\) .",
+        "id": "thm_combined_168",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "引理 4 在光滑流形 \\( M \\) 中存在这样的图册 \\( \\left\\{ {U}_{i}\\right\\} \\) ,其每一个图 \\( {U}_{i} \\) 都与 \\( {\\mathbf{R}}^{n} \\) 微分同胚。",
+        "id": "thm_combined_169",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 3.3.10 设 \\( A \\in \\mathcal{U}\\left( {a, M,\\theta, X}\\right) \\) . 若复数 \\( z \\) 和 \\( w \\) 满足: \\( \\left| {\\arg z}\\right| < \\frac{\\pi }{2} - \\) \\( \\theta ,\\left| {\\arg w}\\right| < \\frac{\\pi }{2} - \\theta \\) ,则有 \\( {\\mathrm{e}}^{-{wA}}{\\mathrm{e}}^{-{zA}} = {\\mathrm{e}}^{-\\left( {w + z}\\right) A} \\) .",
+        "id": "thm_combined_170",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Corollary 1.6. Let \\( k \\) be a field, and let \\( {S}_{1},\\ldots ,{S}_{n} \\) be infinite subsets of \\( k \\) . Let \\( f\\left( {{X}_{1},\\ldots ,{X}_{n}}\\right) \\) be a polynomial in \\( n \\) variables over \\( k \\) . If \\( f\\left( {{a}_{1},\\ldots ,{a}_{n}}\\right) = 0 \\) for all \\( {a}_{i} \\in {S}_{i}\\left( {i = 1,\\ldots, n}\\right) \\), then \\( f = 0 \\) .",
+        "id": "thm_combined_171",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 3 数域 \\( K \\) 上任意一个二次型都可经过非退化的线性替换化为平方和\n\n\\[\n{d}_{1}{x}_{1}^{2} + {d}_{2}{x}_{2}^{2} + \\cdots + {d}_{n}{x}_{n}^{2}\n\\]\n\n的形式, 它称为所给二次型的标准形.",
+        "id": "thm_combined_172",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 3.11 Let \\( \\left( {L,\\left\\lbrack {\\cdot , \\cdot }\\right\\rbrack }\\right) \\) be a \\( \\delta \\) Jordan-Lie algebra and \\( D \\) be a 0-order derivation of weight \\( \\lambda \\) on it. Then \\( D \\) is also a 0 -order derivation of weight \\( \\lambda \\) on \\( \\delta \\) Jordan-Lie triple system \\( \\left( {L,\\left\\lbrack {,,}\\right\\rbrack }\\right) \\), where \\( \\left\\lbrack {,,}\\right\\rbrack \\) is defined by \\( \\left\\lbrack {x, y, z}\\right\\rbrack \\mathrel{\\text{:=}} \\left\\lbrack {\\left\\lbrack {x, y}\\right\\rbrack, z}\\right\\rbrack \\rbrack \\) for all \\( x, y, z \\in L \\) .",
+        "id": "thm_combined_173",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "引理 2.8 Hilbert 变换是弱 \\( \\left( {1,1}\\right) \\) 型的.",
+        "id": "thm_combined_174",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 5 (root and ratio tests). A series of constants \\( \\sum {a}_{n}\\left( {\\left| {a}_{n}\\right| \\neq 0}\\right) \\) converges absolutely if\\n\\n\\[ \\overline{\\lim }\\sqrt[n]{\\left| {a}_{n}\\right| } < 1\\text{ or }\\overline{\\lim }\\left( \\frac{\\left| {a}_{n + 1}\\right| }{\\left| {a}_{n}\\right| }\\right) < 1. \\]\\n\\nIt diverges if\\n\\n\\[ \\overline{\\lim }\\sqrt[n]{\\left| {a}_{n}\\right| } > 1\\text{ or }\\underline{\\lim }\\left( \\frac{\\left| {a}_{n + 1}\\right| }{\\left| {a}_{n}\\right| }\\right) > 1. \\]\\n\\nIt may converge or diverge if\\n\\n\\[ \\overline{\\lim }\\sqrt[n]{\\left| {a}_{n}\\right| } = 1 \\]\\n\\nor if\\n\\n\\[ \\underline{\\lim }\\left( \\frac{\\left| {a}_{n + 1}\\right| }{\\left| {a}_{n}\\right| }\\right) \\leq 1 \\leq \\overline{\\lim }\\left( \\frac{\\left| {a}_{n + 1}\\right| }{\\left| {a}_{n}\\right| }\\right) . \\]\\n\\n(The \\( {a}_{n} \\) may be scalars or vectors.)",
+        "id": "thm_combined_175",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Corollary 2.1.43. Assume that \\( \\chi \\) is a primitive character modulo \\( m \\) and let \\( n = {km} \\) be a multiple of \\( m \\) . Then\\n\\n\\[ \\mathop{\\sum }\\limits_{{x{\\;\\operatorname{mod}\\;n}}}\\chi \\left( x\\right) {\\zeta }_{n}^{ax} = \\left\\{ \\begin{array}{ll} 0 & \\text{ if }k \\nmid a \\\\ k\\bar{\\chi }\\left( {a/k}\\right) \\tau \\left( \\chi \\right) & \\text{ if }k \\mid a. \\end{array}\\right. \\]",
+        "id": "thm_combined_176",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Find a closed formula for the sum of the series \\( \\mathop{\\sum }\\limits_{{n > 0}}\\left( {{n}^{2} + {4n} + 5}\\right) /n! \\) .",
+        "id": "thm_combined_177",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 6 Let \\( \\{ {x}^{k}\\} \\) be generated by the active set method. If the vectors \\( \\left\\lbrack {{a}_{i},\\text{ }i \\in \\mathcal{A}\\left( {x}^{k}\\right) }\\right\\rbrack \\) are linearly independent, then the algorithm terminates at a KKT point of (1) after a finite number of iterations, or the objective function of (1) is unbounded below.",
+        "id": "thm_combined_178",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Proposition 5.4.2. Suppose that \\( X \\) and \\( Y \\) are Banach spaces. A linear operator \\( T : X \\rightarrow Y \\) is Dunford-Pettis if and only if \\( T \\) is weak-to-norm sequentially continuous, i.e., whenever \\( {\\left( {x}_{n}\\right) }_{n = 1}^{\\infty } \\subset X \\) converges to \\( x \\) weakly, then \\( {\\left( T{x}_{n}\\right) }_{n = 1}^{\\infty } \\) converges to \\( {Tx} \\) in norm.",
+        "id": "thm_combined_179",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Proposition 49. Let \\( R \\) be an integral domain. Then the following are equivalent:\\n\\n(1) \\( R \\) is normal, i.e., \\( R \\) is integrally closed (in its field of fractions)\\n\\n(2) \\( {R}_{P} \\) is normal for all prime ideals \\( P \\) of \\( R \\)\\n\\n(3) \\( {R}_{\\mathrm{m}} \\) is normal for all maximal ideals \\( \\mathrm{m} \\) of \\( R \\) .",
+        "id": "thm_combined_180",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Proposition 4.1.7. Let \\( t = {\\dim }_{K}{I}_{d} \\) and let \\( {w}_{1} \\land {w}_{2} \\land \\cdots \\land {w}_{t} \\) be the standard exterior monomial generating \\( \\mathop{\\bigwedge }\\limits^{t}{\\operatorname{gin}}_{ < }{\\left( I\\right) }_{d} \\) . Then\\n\\n\\[ \\n{w}_{1} \\land {w}_{2} \\land \\cdots \\land {w}_{t} = \\max \\left\\{ {{\\operatorname{in}}_{ < }\\left( f\\right) : 0 \\neq f \\in \\mathop{\\bigwedge }\\limits^{t}\\alpha {\\left( I\\right) }_{d},\\alpha \\in {\\mathrm{{GL}}}_{n}\\left( K\\right) }\\right\\} .\\n\\]",
+        "id": "thm_combined_181",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "命题 1 所设如上. 对于 \\( K/F \\) 的任何一个中间域 \\( E,\\operatorname{Aut}(K \\) \\( /E) \\) 必然是 \\( G \\) 的闭子群.",
+        "id": "thm_combined_182",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Proposition 4.22. If \\( Z = {u}_{1},\\ldots ,{u}_{m} \\) is a linearly independent list in an \\( n \\) -dimensional vector space \\( V \\), then \\( Z \\) can be extended to a basis; that is, there are vectors \\( {v}_{1},\\ldots ,{v}_{n - m} \\) so that \\( {u}_{1},\\ldots ,{u}_{m},{v}_{1},\\ldots ,{v}_{n - m} \\) is a basis of \\( V \\) .",
+        "id": "thm_combined_183",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 2.2 设计数过程 \\( \\{ X\\left( t\\right), t \\geq 0\\} \\) 是时齐的独立增量过程且满足下列条件:\n\n（1）存在 \\( {t}_{0} > 0 \\) ,使得 \\( P\\left( {X\\left( {t}_{0}\\right) = 0}\\right) < 1 \\) ;\n\n(2) \\( \\mathop{\\lim }\\limits_{{t \\searrow 0}}\\frac{1}{t}P\\left( {X\\left( t\\right) \\geq 2}\\right) = 0 \\) ,\n\n则 \\( \\{ X\\left( t\\right), t \\geq 0\\} \\) 是泊松过程.",
+        "id": "thm_combined_184",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Proposition 47.11. Given any \\( n \\in \\mathbb{N} \\) and given any abelian group \\( \\pi \\) there exists an \\( \\left( {n + 1}\\right) \\) -dimensional CW-complex that has no cells in dimensions \\( 1,\\ldots, n - 1 \\) and that is a Moore space of type \\( \\mathrm{M}\\left( {\\pi, n}\\right) \\) .",
+        "id": "thm_combined_185",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 2.1 在仿射坐标系下,已知三点 \\( {P}_{1}\\left( {{x}_{1},{y}_{1}}\\right) ,{P}_{2}\\left( {{x}_{2},{y}_{2}}\\right) ,{P}_{3}\\left( {{x}_{3},{y}_{3}}\\right) \\) 则\n\n\\[\n\\left( {{P}_{1}{P}_{2}{P}_{3}}\\right) = \\frac{{x}_{3} - {x}_{1}}{{x}_{3} - {x}_{2}} = \\frac{{y}_{3} - {y}_{1}}{{y}_{3} - {y}_{2}}\n\\]",
+        "id": "thm_combined_186",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "引理5.4.2 设\n\n\\[\n\\Lambda = \\left\\lbrack \\begin{array}{ll} D & O \\\\ O & I \\end{array}\\right\\rbrack \\left\\lbrack \\begin{array}{l} Q \\\\ P \\end{array}\\right\\rbrack\n\\]\n\n其中 \\( D, Q \\) 分别属于 \\( {R}^{k \\times 1} \\) 和 \\( {R}^{1 \\times n}\\left( {t < n}\\right) \\) 且 \\( {DQ} = C \\) 为 \\( C \\) 的秩分解, \\( P \\) 为 \\( n \\) 维行向量并与 \\( Q \\) 的 \\( t \\) 行线性无关,且 \\( d = p\\left( {I - {C}^{ + }C}\\right) \\) \\( \\neq 0 \\) ,则\n\n\\[\n{A}^{ + } = \\left( {{C}^{ + } - {d}^{ + }p{C}^{ + }{d}^{ + }}\\right)\n\\]",
+        "id": "thm_combined_187",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例 3.2 代数数域. 设 \\( f\\left( x\\right) \\in \\mathbb{Q}\\left\\lbrack x\\right\\rbrack ,\\deg f\\left( x\\right) = n \\geq 1,\\alpha \\) 是 \\( f\\left( x\\right) \\) 在复数域 \\( \\mathbb{C} \\) 中的一个零点 (无妨假设 \\( f\\left( x\\right) \\) 是 \\( \\mathbb{Q}\\left\\lbrack x\\right\\rbrack \\) 中的不可约多项式, 这是因为任一多项式的一个零点总是该多项式的某个不可约因子的零点). 容易看出集合\n\n\\[\nK = \\mathbb{Q}\\left( \\alpha \\right) = \\{ g\\left( \\alpha \\right) \\mid g\\left( x\\right) \\in \\mathbb{Q}\\left( x\\right) \\}\n\\]\n\n在 \\( \\mathbb{C} \\) 的运算下构成一个域,称为代数数域. 不难看出 \\( K \\) 可以较简单地表述为\n\n\\[\nK = \\{ r\\left( \\alpha \\right) \\mid r\\left( x\\right) \\in \\mathbb{Q}\\left\\lbrack x\\right\\rbrack ,\\deg r\\left( x\\right) \\leq n - 1\\}\n\\]",
+        "id": "thm_combined_188",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 2 设线性空间 \\( E \\) 上有两个局部凸向量拓扑,它们分别是用拟范数族 \\( S \\) 和 \\( T \\) 定义的,假定对于每一个 \\( p \\in S \\) ,关于 \\( T \\) -拓扑是连续的,同时对于每一个 \\( q \\in T \\) ,关于 \\( {S}^{ - } \\) 拓扑是下半连续的 (序列下半连续). 如果集 \\( A \\subset E \\) 关于 \\( S \\) -拓扑是完备的 (序列完备的),则 \\( A \\) 关于 \\( T \\) -拓扑必定是完备的 (序列完备).",
+        "id": "thm_combined_189",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 5.7 设 \\( L \\) 是一个语言,下述命题是等价的:\n\n(1) \\( L \\) 是递归可枚举的;\n\n（2） \\( L \\) 被确定型 Turing 机接受;\n\n（3） \\( L \\) 被非确定型 Turing 机接受;\n\n(4) \\( L \\) 由文法生成.",
+        "id": "thm_combined_190",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Proposition 5.1 Suppose \\( f \\in {L}^{p}\\left( {\\mathbb{R}}^{d}\\right) \\) is a radial function. Then \\( \\widehat{f} \\) is continuous for \\( \\xi \\neq 0 \\) whenever \\( 1 \\leq p < {2d}/\\left( {d + 1}\\right) \\) . Note the sequence of exponents \\( \\frac{2d}{\\left( d + 1\\right) } : 1,\\frac{4}{3},\\frac{3}{2},\\frac{8}{5},\\ldots \\) that tends to 2 as \\( d \\rightarrow \\infty \\) .",
+        "id": "thm_combined_191",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Proposition 11.1. Let the group \\( B \\) act on a group \\( A \\) by automorphisms. The mapping \\( \\varphi : b \\mapsto \\varphi \\left( b\\right) \\) defined by \\( \\varphi \\left( b\\right) : a \\mapsto {}^{b}a \\) is a homomorphism of \\( B \\) into the group \\( \\operatorname{Aut}\\left( A\\right) \\) of all automorphisms of \\( A \\) .",
+        "id": "thm_combined_192",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 4.4. \\( {H}_{n} \\) is a unique factorization domain.",
+        "id": "thm_combined_193",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例 1.1 (离散分布随机数) 设离散随机变量 \\( X \\) 的分布函数为 \\( F\\left( x\\right) \\) ,概率函数为\n\n\\[\nf\\left( x\\right) = P\\left( {X = x}\\right) \\text{,满足 }{p}_{i} = f\\left( {x}_{i}\\right) > 0,\\;\\mathop{\\sum }\\limits_{i}{p}_{i} = 1\\text{. }\n\\]\n\n我们将 \\( \\left\\lbrack {0,1}\\right\\rbrack \\) 分为一些互不相交的子区间,使第 \\( i \\) 个子区间 \\( {J}_{i} \\) 的长度为 \\( {p}_{i} \\) . 任取一个均匀随机数 \\( u \\) ,我们定义一个由它生出 \\( Z \\) 的如下方法:\n\n若 \\( u \\in {J}_{i} \\) ,令 \\( z = {x}_{i} \\) (意思是: 如果 \\( u \\) 落入 \\( {J}_{i} \\) ,就取 \\( \\left. {z = {x}_{i}}\\right) \\) ,\n\n那么, \\( Z \\) 是一个 \\( F \\) -随机数.",
+        "id": "thm_combined_194",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 3 设 \\( f \\in \\log {A}_{a,{b\\beta }} \\cap \\mathrm{{BD}} \\) . 则 \\( \\forall \\varepsilon > 0 \\) ,存在 \\( f \\) 的分解 \\( f = g \\) \\( - h + \\varphi \\) ,其中 \\( \\varphi \\in {L}^{\\infty }, g, h \\in \\mathrm{{BLO}} \\) ; 并且 \\( \\forall \\tau > 0 \\) ,有\n\n\\[\ng \\in \\log {A}_{a - 1},,\\;h \\in \\log {A}_{\\beta - 1},\n\\]",
+        "id": "thm_combined_195",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "Theorem 1.6.2 The following hold:\\n\\n(a) For any \\( x \\in \\mathbb{R} \\), there exists \\( n \\in \\mathbb{N} \\) such that \\( x < n \\) ;",
+        "id": "thm_combined_196",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "例 4 \\(\\left\\{ {{Z}_{n};+, \\cdot }\\right\\}\\) 是交换环.",
+        "id": "thm_combined_197",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 20.2.2 (中心极限定理 (CLT)) 设 \\( {X}_{1},\\cdots ,{X}_{N} \\) 是独立同分布的随机变量, 存在某个 \\( \\delta > 0 \\) ,使得当 \\( \\left| t\\right| < \\delta \\) 时它们的矩母函数收敛 (这意味着所有矩均存在且有限). 用 \\( \\mu \\) 表示其均值, \\( {\\sigma }^{2} \\) 表示方差. 令\n\n\\[\n{\\bar{X}}_{N} = \\frac{{X}_{1} + \\cdots + {X}_{N}}{N}\n\\]\n\n且\n\n\\[\n{Z}_{N} = \\frac{{\\bar{X}}_{N} - \\mu }{\\sigma /\\sqrt{N}}.\n\\]\n\n那么,当 \\( N \\rightarrow \\infty \\) 时, \\( {Z}_{n} \\) 的分布会收敛于标准正态分布 (相关陈述参见定义 20.2.1).",
+        "id": "thm_combined_198",
+        "header": "import Mathlib\n"
+    },
+    {
+        "informal_statement": "定理 2.19 SOR 方法收敛的必要条件是 \\( 0 < \\omega < 2 \\) 。",
+        "id": "thm_combined_199",
+        "header": "import Mathlib\n"
+    }
+]

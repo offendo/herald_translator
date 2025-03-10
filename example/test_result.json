@@ -1,0 +1,18 @@
+[
+    {
+        "id": "test",
+        "informal_statement": "Prove that harmonic series is not convergent.",
+        "verified": [
+            "import Mathlib\nopen Filter Finset\nopen NNReal in\nopen Finset\nopen ENNReal in\nopen ENNReal in\nopen NNReal in\nopen Filter\n\ntheorem not_summable_one_div_natCast : ¬Summable (fun n => 1 / n : ℕ → ℝ) := sorry",
+            "import Mathlib\nopen Filter Finset\nopen NNReal in\nopen Finset\nopen ENNReal in\nopen ENNReal in\nopen NNReal in\nopen Filter\n\ntheorem not_summable_one_div_natCast : ¬Summable (fun n => 1 / n : ℕ → ℝ) := sorry",
+            "import Mathlib\nopen Filter Finset\nopen NNReal in\nopen Finset\nopen ENNReal in\nopen ENNReal in\nopen NNReal in\nopen Filter\n\ntheorem not_summable_natCast_inv : ¬Summable (fun n => n⁻¹ : ℕ → ℝ) := sorry",
+            "import Mathlib\nopen Filter Finset\nopen NNReal in\nopen Finset\nopen ENNReal in\nopen ENNReal in\nopen NNReal in\nopen Filter\n\ntheorem not_summable_one_div_natCast : ¬Summable (fun n => 1 / n : ℕ → ℝ) := sorry"
+        ],
+        "translated": [
+            "import Mathlib\nopen Filter Finset\nopen NNReal in\nopen Finset\nopen ENNReal in\nopen ENNReal in\nopen NNReal in\nopen Filter\n\ntheorem not_summable_one_div_natCast : ¬Summable (fun n => 1 / n : ℕ → ℝ) := sorry",
+            "import Mathlib\nopen Filter Finset\nopen NNReal in\nopen Finset\nopen ENNReal in\nopen ENNReal in\nopen NNReal in\nopen Filter\n\ntheorem not_summable_one_div_natCast : ¬Summable (fun n => 1 / n : ℕ → ℝ) := sorry",
+            "import Mathlib\nopen Filter Finset\nopen NNReal in\nopen Finset\nopen ENNReal in\nopen ENNReal in\nopen NNReal in\nopen Filter\n\ntheorem not_summable_natCast_inv : ¬Summable (fun n => n⁻¹ : ℕ → ℝ) := sorry",
+            "import Mathlib\nopen Filter Finset\nopen NNReal in\nopen Finset\nopen ENNReal in\nopen ENNReal in\nopen NNReal in\nopen Filter\n\ntheorem not_summable_one_div_natCast : ¬Summable (fun n => 1 / n : ℕ → ℝ) := sorry"
+        ]
+    }
+]
