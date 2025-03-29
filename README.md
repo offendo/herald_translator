@@ -2,7 +2,7 @@
 
 ## Introduction
 
-We release our annotated dataset from Mathlib 4 and our latest translator model for autoformalization.
+We release our annotated dataset from Mathlib 4 and our latest translator model for autoformalization. We refer to our [paper](https://iclr.cc/virtual/2025/poster/29589) in ICLR2025 for more detailed information.
 
 ## Dataset Downloads
 
