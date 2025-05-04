@@ -63,4 +63,4 @@ class Verifier(object):
         with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
             results = list(executor.map(verify_item, statement_list))
 
-        return[item for item in results if item is not None]
+        return [item for item in results if item is not None]
